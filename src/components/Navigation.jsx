@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 
 export default function Navigation({ device }) {
   useEffect(() => {
@@ -13,22 +12,22 @@ export default function Navigation({ device }) {
           <ul className="flex flex-row flex-wrap">
             <li>
               <button>
-                <Link to="/">Home</Link>
+                <a href="#about">About</a>
               </button>
             </li>
             <li>
               <button>
-                <Link to="/info">Info</Link>
+                <a href="#projects">Projects</a>
               </button>
             </li>
             <li>
               <button>
-                <Link to="/about">About</Link>
+                <a href="#experience">Experience</a>
               </button>
             </li>
             <li>
               <button>
-                <Link to="/contact">Contact</Link>
+                <a href="#contact">Contact</a>
               </button>
             </li>
           </ul>

@@ -1,28 +1,26 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Toaster, toast } from "sonner";
-import {
-  useCopyToClipboard,
-  useLocalStorage,
-  useWindowSize,
-} from "@uidotdev/usehooks";
+import { useLocalStorage, useWindowSize } from "@uidotdev/usehooks";
 
 import Header from "./components/Header";
-import Instructions from "./components/Instructions";
-import Body from "./components/Body";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
-import CopyToClipboard from "./components/CopyToClipboard";
+import About from "./sections/About";
+import Contact from "./sections/Contact";
+import Projects from "./sections/Projects";
+import Experience from "./sections/Experience";
+import Socials from "./components/Socials";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [theme, setTheme] = useState("dark");
   const [device, setDevice] = useState("mobile");
   const windoSize = useWindowSize();
 
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
+  };
+
   useEffect(() => {
-    toast.success("Congrats on finding this!");
+    toast("Congrats on finding your new developer😎");
   }, []);
 
   useEffect(() => {
@@ -33,38 +31,20 @@ function App() {
     }
   }, [windoSize]); // Update device state when windoSize changes
 
-  useEffect(() => {
-    if (count > 10) {
-      toast("Someone sure likes clicking");
-    }
-  }, [count]); // Update toast when count changes
-
   return (
-    <BrowserRouter>
+    <div id={theme} className="App">
       <Toaster richColors />
-      <Header device={device} />
-      <CopyToClipboard text="http://template.cherrydub.com" />
-      <br />
-      <Body />
-
-      <br />
-      <div className="flex justify-center">
-        <div className="scrollable-container ">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/info" element={<Instructions />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </div>
-      </div>
-      <br />
-      <div className="card">
-        <button onClick={() => setCount((prevCount) => prevCount + 1)}>
-          count is {count}
-        </button>
-      </div>
-    </BrowserRouter>
+      <Header id="top" device={device} />
+      <button id="theme-button" onClick={toggleTheme}>
+        {theme}
+      </button>
+      {/* <Body /> */}
+      <About />
+      <Projects />
+      <Experience />
+      <Contact />
+      <Socials />
+    </div>
   );
 }
 
