@@ -1,15 +1,44 @@
-#root {
+:root {
   /* max-width: 1280px; */
   /* margin: 0 auto; */
   /* padding: 2rem; */
   text-align: center;
 }
+
+.section {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  min-height: 25vh;
+  /* border: 1px solid #80808050; */
+
+  padding: 50px;
+}
+
+.about {
+  background-color: #dd7373;
+  border-top: 6px solid black;
+}
+
+.projects {
+  background-color: #3b3561;
+}
+
+.experience {
+  background-color: #ead94c;
+}
+
+.contact {
+  background-color: #51a3a3;
+  border-bottom: 50px solid black;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
@@ -35,14 +64,18 @@
   overflow-y: scroll;
 }
 
+.titles {
+  /* background-color: rgb(239, 216, 174); Your hex color */
+}
+
 .header {
   position: fixed;
-  background-color: transparent;
+  background-color: #3b3561;
   top: 0;
   left: 0;
   height: 30px;
   width: 100%;
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 3px solid black;
 }
 
 /* .copy-button {
@@ -58,11 +91,14 @@
 }
 
 .titles {
-  color: var(--secondary-color);
+  color: black;
+  font-weight: 900;
+  font-size: 1.3rem;
+  text-align: right;
 }
 
 .socials img:hover {
-  background-color: var(--accent-1-color);
+  background-color: transparent;
 }
 
 .socials img {
@@ -71,7 +107,7 @@
   width: 2rem;
   border: 1px solid black;
   border-radius: 50%;
-  background-color: var(--secondary-color);
+  background-color: white;
 }
 
 #theme-button {

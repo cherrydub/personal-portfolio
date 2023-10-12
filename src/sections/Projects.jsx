@@ -3,7 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
   return (
-    <div>
+    <div className="projects section">
       <h1 className="titles">Projects</h1>
       <div>
         <section>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Experience() {
   return (
-    <div>
+    <div className="experience section">
       <h1 className="titles">Experience</h1>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eos ipsum
       dolorum atque rem velit repellat enim accusamus, explicabo odio iusto?
