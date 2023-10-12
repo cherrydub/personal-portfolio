@@ -6,95 +6,31 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: white;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%; */
 }
 
-#light {
-  --background-color: white;
-  --primary-color: black;
-  --secondary-color: pink;
-  --accent-1-color: yellow;
-  --accent-2-color: orange;
-
-  /* --slate-gray: #828a95ff;
-  --columbia-blue: #ceeaf7ff;
-  --columbia-blue-2: #ccd7e4ff;
-  --thistle: #d5c9dfff;
-  --pink-lavender: #dcb8cbff; */
-
-  /* --neutral-1-color: #fff;
-  --neutral-2-color: #fff; */
-
-  /* --main-background: #ceeaf7;
-  --text: #828a95;
-  --title-background: rgb(205, 207, 201);
-  --title-text: #c6d4ff;
-  --textarea-background: #c6d4ff;
-  --textarea-border: black;
-  --textarea-text: black;
-  --primary-color: gray;
-  --secondary-color: #d5c9df;
-  --button-background: rgb(205, 207, 201);
-  --button-border: black;
-  --button-text: black;
-  --button-hover: #f0dc28;
-  --input-background: white;
-  --input-text: gray;
-  --input-border: black;
-  --header-footer-background: #f0dc28;
-  --header-footer-text: black;
-  --output-divs-background: white;
-  --output-divs-text: gray;
-  --output-divs-border: black;
-  --rgba-header-footer-text: 0, 0, 0; */
+[data-theme="dark"] {
+  --background-color: rgb(104, 0, 0);
+  --primary-color: red;
+  --secondary-color: orange;
+  --accent-1-color: pink;
+  --accent-2-color: yellow;
 }
 
-#dark {
-  /* --background-color: rgba(220, 184, 203, 1); */
-  --background-color: 0, 0, 0;
-  --primary-color: 206, 234, 247;
-  --secondary-color: 204, 215, 228;
-  --accent-1-color: 213, 201, 223;
-  --accent-2-color: 220, 184, 203;
+[data-theme="light"] {
+  --background-color: rgb(255, 233, 193);
+  --primary-color: yellow;
+  --secondary-color: orange;
+  --accent-1-color: pink;
+  --accent-2-color: yellow;
+}
 
-  /* --main-background: #242424;
-  --text: white;
-  --title-background: gray;
-  --title-text-color: white;
-  --textarea-background: black;
-  --textarea-border: white;
-  --textarea-text: white;
-  --primary-color: green;
-  --secondary-color: pink;
-  --button-background: gray;
-  --button-border: white;
-  --button-text: white;
-  --button-hover: black;
-  --input-background: black;
-  --input-text: white;
-  --input-border: white;
-  --header-footer-background: black;
-  --header-footer-text: white;
-  --output-divs-background: gray;
-  --output-divs-text: white;
-  --output-divs-border: white;
-
-  --rgba-header-footer-text: 255, 255, 255; */
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
 }
 
 .App {
   min-height: 100vh;
-  background-color: var(--background-color);
-  color: var(--primary-color);
   padding: 10px;
   padding-top: 30px;
 }
