@@ -57,17 +57,17 @@
 
 .frontend-stack {
   position: relative;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
 }
 
 .frontend-stack:hover {
-  border: 1px solid var(--accent-2-color);
+  /* border: 1px solid var(--accent-2-color); */
 }
 
 .frontend-text {
   display: none;
   background-color: var(--accent-2-color);
-  color: var(--primary-color);
+  color: var(--background-color);
   position: absolute;
   top: 0; /* Adjust this value to position the text as needed */
   left: 0;
@@ -124,7 +124,7 @@
 } */
 
 .titles {
-  color: var(--accent-1-color);
+  color: var(--accent-2-color);
   font-weight: 900;
   font-size: 1.3rem;
   text-align: right;
