@@ -9,7 +9,7 @@ export default function ProjectCard({
   siteLink,
 }) {
   return (
-    <div className="border border-green-500">
+    <div className="">
       <h2>{title}</h2>
       <p>{stack}</p>
       <p>{description}</p>

@@ -50,15 +50,17 @@ function App() {
     <div id={theme} className="App">
       <Toaster richColors />
       <Header id="top" device={device} />
-      <div>current theme: {theme}</div>
-      <div>device: {device}</div>
+      <div className="main-sections">
+        <div>current theme: {theme}</div>
+        <div>device: {device}</div>
 
-      <button onClick={toggleTheme}>Toggle Theme</button>
-      <About />
-      <Projects />
-      <Experience />
-      <Contact />
-      <Socials />
+        <button onClick={toggleTheme}>Toggle Theme</button>
+        <About />
+        <Projects />
+        <Experience />
+        <Contact />
+        <Socials />
+      </div>
     </div>
   );
 }

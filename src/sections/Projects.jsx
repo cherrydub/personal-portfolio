@@ -11,7 +11,7 @@ export default function Projects() {
           minima fugiat nam sint eligendi corrupti eaque ad aliquam quo sapiente
           asperiores quae aspernatur eveniet dicta repudiandae, maxime numquam
         </section>
-        <div className="flex justify-center items-center flex-wrap border-2">
+        <div className="flex justify-center items-center flex-wrap">
           <ProjectCard
             projectCount={0}
             title="project 1"

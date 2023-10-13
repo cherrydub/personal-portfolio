@@ -1,35 +1,9 @@
 :root {
-  /* max-width: 1280px; */
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
-  text-align: center;
 }
 
 .section {
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
   min-height: 25vh;
-  /* border: 1px solid #80808050; */
-
   padding: 50px;
-}
-
-.about {
-  background-color: #dd7373;
-  border-top: 6px solid black;
-}
-
-.projects {
-  background-color: #3b3561;
-}
-
-.experience {
-  background-color: #ead94c;
-}
-
-.contact {
-  background-color: #51a3a3;
-  border-bottom: 50px solid black;
 }
 
 .logo {
@@ -46,6 +20,68 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+/* About section */
+.svg-container {
+  font-size: 0.5rem;
+}
+
+.svg-container svg {
+  width: 3rem;
+  border: 1px solid var(--primary-color);
+  padding: 10px;
+  margin: 2px;
+}
+
+.svg-container svg:hover {
+  border: 1px solid transparent;
+}
+
+.svg-wrapper {
+  position: relative;
+}
+
+.svg-text {
+  display: none;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  position: absolute;
+  bottom: 0px; /* Adjust this value to position the text as needed */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.svg-wrapper:hover .svg-text {
+  display: block;
+}
+
+.frontend-stack {
+  position: relative;
+  border: 1px solid transparent;
+}
+
+.frontend-stack:hover {
+  border: 1px solid var(--accent-2-color);
+}
+
+.frontend-text {
+  display: none;
+  background-color: var(--accent-2-color);
+  color: var(--primary-color);
+  position: absolute;
+  top: 0; /* Adjust this value to position the text as needed */
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 100%; /* Set the width to 100% to span the entire container */
+}
+
+.frontend-stack:hover .frontend-text {
+  display: block;
+}
+
+/* About finished */
+
 .instructions-inner {
   max-width: 500px;
 }
@@ -59,23 +95,26 @@
 .scrollable-container {
   height: 40svh; /* Adjust the height as needed */
   padding: 15px;
-  background-color: black;
+  /* background-color: black; */
   width: 100vw;
   overflow-y: scroll;
 }
 
-.titles {
-  /* background-color: rgb(239, 216, 174); Your hex color */
+.section-item {
+  /* background-color: black; */
+  min-height: 20vh;
+  /* border-radius: 20px; */
 }
 
 .header {
   position: fixed;
-  background-color: #3b3561;
+  background-color: var(--primary-color);
   top: 0;
   left: 0;
   height: 30px;
   width: 100%;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid var(--primary-color);
+  z-index: 100;
 }
 
 /* .copy-button {
@@ -84,30 +123,27 @@
   border: 1px solid gray;
 } */
 
-.socials {
-  position: fixed;
-  bottom: 1rem;
-  left: 0.5rem;
-}
-
 .titles {
-  color: black;
+  color: var(--accent-1-color);
   font-weight: 900;
   font-size: 1.3rem;
   text-align: right;
 }
 
-.socials img:hover {
-  background-color: transparent;
+.socials {
+  position: fixed;
+  bottom: 1rem;
+  left: 0.5rem;
+  border: 1px solid var(--primary-color);
+  z-index: 100;
 }
 
-.socials img {
+.socials svg {
+  fill: var(--primary-color);
+  width: 2rem;
+  /* border: 1px solid var(--background-color); */
   padding: 5px;
   margin: 2px;
-  width: 2rem;
-  border: 1px solid black;
-  border-radius: 50%;
-  background-color: white;
 }
 
 #theme-button {
