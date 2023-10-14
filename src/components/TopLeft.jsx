@@ -4,9 +4,9 @@ import Typewriter from "typewriter-effect/dist/core";
 export default function TopLeft() {
   useEffect(() => {
     const typewriter = new Typewriter("#topleft", {
-      strings: ["Hello", "World"],
+      strings: ["Hello", "World", "Welcome to my page"],
       autoStart: true,
-      looop: true,
+      loop: true,
     });
 
     return () => {

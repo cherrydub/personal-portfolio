@@ -7,34 +7,34 @@ export default function Navigation({ device }) {
 
   return (
     <div className="navigation">
-      {device === "comp" ? (
-        <>
-          <ul className="flex flex-row flex-wrap">
-            <li>
-              <button>
-                <a href="#about">About</a>
-              </button>
-            </li>
-            <li>
-              <button>
-                <a href="#projects">Projects</a>
-              </button>
-            </li>
-            <li>
-              <button>
-                <a href="#experience">Experience</a>
-              </button>
-            </li>
-            <li>
-              <button>
-                <a href="#contact">Contact</a>
-              </button>
-            </li>
-          </ul>
-        </>
-      ) : (
+      {/* {device === "comp" ? ( */}
+      <>
+        <ul className="flex flex-row flex-wrap">
+          <li>
+            <a href="#about">
+              <button>About</button>
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+              <button>Projects</button>
+            </a>
+          </li>
+          <li>
+            <a href="#experience">
+              <button>Experience</button>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <button>Contact</button>
+            </a>
+          </li>
+        </ul>
+      </>
+      {/* ) : (
         <button>X</button>
-      )}
+      )} */}
     </div>
   );
 }
