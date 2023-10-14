@@ -8,6 +8,7 @@ import Contact from "./sections/Contact";
 import Projects from "./sections/Projects";
 import Experience from "./sections/Experience";
 import Socials from "./components/Socials";
+import Starter from "./sections/Starter";
 
 function App() {
   const [theme, setTheme] = useState("dark"); // Default to dark theme
@@ -43,7 +44,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    setDevice(windoSize.width > 600 ? "desktop" : "mobile");
+    setDevice(windoSize.width > 600 ? "comp" : "mobile");
   }, [windoSize]);
 
   return (
@@ -51,10 +52,20 @@ function App() {
       <Toaster richColors />
       <Header id="top" device={device} />
       <div className="main-sections">
-        <div>current theme: {theme}</div>
-        <div>device: {device}</div>
-
-        <button onClick={toggleTheme}>Toggle Theme</button>
+        <button onClick={toggleTheme} className="toggle-button flex flex-col">
+          {device === "comp" ? (
+            <i class="las la-laptop-code"></i>
+          ) : (
+            <i class="las la-mobile"></i>
+          )}
+          {theme === "dark" ? (
+            <i className="lar la-moon"></i>
+          ) : (
+            <i className="lar la-sun"></i>
+          )}
+          {/* {theme} */}
+        </button>
+        <Starter />
         <About />
         <Projects />
         <Experience />

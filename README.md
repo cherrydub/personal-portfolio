@@ -1,8 +1,12 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+For this portfolio, will be using:
 
-Currently, two official plugins are available:
+REACT + VITE + tailwindcss
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-icons
+react icons: https://react-icons.github.io/react-icons/
+for light icons: https://icons8.com/
+
+-animation
+framer motion: https://www.framer.com/motion/

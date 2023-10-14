@@ -7,7 +7,7 @@ export default function Navigation({ device }) {
 
   return (
     <div>
-      {device === "desktop" ? (
+      {device === "comp" ? (
         <>
           <ul className="flex flex-row flex-wrap">
             <li>
