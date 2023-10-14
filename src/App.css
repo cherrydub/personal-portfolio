@@ -169,6 +169,7 @@
   width: 35px;
   height: 100%;
   border-right: 1px solid #ffffff50;
+  background-color: var(--neutral-1-color);
   /* background-color: var(--neutral-1-color); */
   z-index: 99;
 }
