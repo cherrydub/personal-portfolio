@@ -267,13 +267,18 @@
   width: 50vw;
   height: 100vh;
   z-index: 1000;
-
-  /* border: 1px solid white; */
-}
-
-.nav-menu {
+  text-transform: uppercase;
   font-size: 2rem;
   width: 50vw;
+}
+
+.nav-menu a {
+  color: var(--primary-color);
+  font-weight: bolder;
+}
+
+.nav-menu a:hover {
+  color: var(--background-color);
 }
 
 /* .nav-menu ul:hover {
