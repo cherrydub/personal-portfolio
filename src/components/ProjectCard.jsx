@@ -14,7 +14,7 @@ export default function ProjectCard({
 }) {
   return (
     <div className="project-card">
-      <h2>{title}</h2>
+      <h2 className="font-bold">{title}</h2>
       <div className="stack flex flex-wrap">
         {stack.map((tech) => (
           <img key={tech} src={badgeObj[tech]} alt={tech} />
