@@ -57,7 +57,7 @@ const badgeObj = {
 
 export default function Projects() {
   return (
-    <div className="projects section">
+    <div className="projects section" id="projects">
       <h1 className="titles">Projects</h1>
       <div>
         <section></section>

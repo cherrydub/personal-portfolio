@@ -2,12 +2,17 @@ import React from "react";
 
 export default function Experience() {
   return (
-    <div className="experience section">
+    <div className="section experience" id="experience">
       <h1 className="titles">Experience</h1>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eos ipsum
-      dolorum atque rem velit repellat enim accusamus, explicabo odio iusto?
-      Mollitia assumenda architecto tenetur maiores ullam laborum? Dolorum,
-      commodi?
+      <div className="section-item">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quas in
+        repudiandae officiis soluta rem et! Reprehenderit, ratione at. Odio,
+        veniam vel doloribus consequuntur ipsam ullam obcaecati saepe quae
+        quaerat? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio
+        omnis alias aspernatur pariatur optio facere nemo quasi at neque harum?
+        Non beatae culpa officia atque neque officiis illo quaerat
+        reprehenderit.
+      </div>
     </div>
   );
 }

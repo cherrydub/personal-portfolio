@@ -9,6 +9,8 @@ import Projects from "./sections/Projects";
 import Experience from "./sections/Experience";
 import Socials from "./components/Socials";
 import Starter from "./sections/Starter";
+import LeftBar from "./components/LeftBar";
+import TopLeft from "./components/TopLeft";
 
 function App() {
   const [theme, setTheme] = useState("dark"); // Default to dark theme
@@ -50,27 +52,35 @@ function App() {
   return (
     <div id={theme} className="App">
       <Toaster richColors />
-      <Header id="top" device={device} />
-      <div className="main-sections">
+      <Header id="top" device={device}>
+        <div className="flex pt-2 pl-3">
+          <span className="device pr-2">
+            {device === "comp" ? (
+              <i class="las la-laptop-code"></i>
+            ) : (
+              <i class="las la-mobile"></i>
+            )}
+          </span>
+          <TopLeft />
+        </div>
+      </Header>
+      <LeftBar>
+        <Socials />
         <button onClick={toggleTheme} className="toggle-button flex flex-col">
-          {device === "comp" ? (
-            <i class="las la-laptop-code"></i>
-          ) : (
-            <i class="las la-mobile"></i>
-          )}
           {theme === "dark" ? (
-            <i className="lar la-moon"></i>
+            <i class="las la-adjust"></i>
           ) : (
             <i className="lar la-sun"></i>
           )}
           {/* {theme} */}
         </button>
-        <Starter />
+      </LeftBar>
+      <div className="main-sections">
+        {/* <Starter /> */}
         <About />
         <Projects />
         <Experience />
         <Contact />
-        <Socials />
       </div>
     </div>
   );

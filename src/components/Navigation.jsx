@@ -6,7 +6,7 @@ export default function Navigation({ device }) {
   }, [device]);
 
   return (
-    <div>
+    <div className="navigation">
       {device === "comp" ? (
         <>
           <ul className="flex flex-row flex-wrap">

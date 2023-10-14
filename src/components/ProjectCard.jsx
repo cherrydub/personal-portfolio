@@ -21,7 +21,7 @@ export default function ProjectCard({
         ))}
       </div>
       <p>{description}</p>
-      <img src={imgSrc} alt={title} width={"50px"} />
+      {/* <img src={imgSrc} alt={title} width={"50px"} /> */}
       <div className="links">
         {githubLink && (
           <a href={githubLink} target="_blank" rel="noopener noreferrer">

@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect/dist/core";
 
-export default function Starter() {
+export default function TopLeft() {
   useEffect(() => {
-    const typewriter = new Typewriter("#starter", {
+    const typewriter = new Typewriter("#topleft", {
       strings: ["Hello", "World"],
       autoStart: true,
+      looop: true,
     });
 
     return () => {
@@ -13,5 +14,5 @@ export default function Starter() {
     };
   }, []);
 
-  return <div id="starter"></div>;
+  return <div id="topleft"></div>;
 }
