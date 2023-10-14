@@ -186,6 +186,8 @@
   font-size: 1.3rem;
   text-align: right;
   border-bottom: 1px solid #ffffff50;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   /* background-color: var(--primary-color); */
   /* border-bottom: 1px solid white; */
 }
@@ -221,11 +223,19 @@
 }
 
 .navigation {
-  margin-top: 5px;
-  margin-right: 10px;
+  position: fixed;
+  top: 0;
+  right: 0px;
+  height: 34px;
+  background-color: var(--accent-2-color);
+  z-index: 1000;
+
+  /* margin-top: 5px;
+  margin-right: 10px; */
 }
 
 .navigation button {
+  height: 34px;
   background-color: var(--accent-2-color);
   border: 2px solid transparent;
   color: var(--background-color);
@@ -233,6 +243,8 @@
 
 .navigation a {
   color: var(--background-color);
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* .navigation a:hover {
@@ -248,6 +260,35 @@
 
 .toggle-button i {
   font-size: 1rem;
+}
+
+.nav-menu {
+  background-color: var(--accent-2-color);
+  width: 50vw;
+  height: 100vh;
+  z-index: 1000;
+
+  /* border: 1px solid white; */
+}
+
+.nav-menu {
+  font-size: 2rem;
+  width: 50vw;
+}
+
+/* .nav-menu ul:hover {
+  width: 50vw;
+} */
+
+/* .nav-button-container {
+  width: 300px;
+} */
+
+.nav-button {
+}
+
+.nav-button i {
+  font-size: 0.7rem;
 }
 
 @keyframes logo-spin {

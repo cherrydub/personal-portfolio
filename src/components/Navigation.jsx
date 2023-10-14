@@ -1,40 +1,62 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 
 export default function Navigation({ device }) {
-  useEffect(() => {
-    // Update the currentDevice state when the device prop changes
-  }, [device]);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
-    <div className="navigation">
-      {/* {device === "comp" ? ( */}
-      <>
+    <div className="navigation text-right">
+      {device === "comp" ? (
         <ul className="flex flex-row flex-wrap">
           <li>
-            <a href="#about">
-              <button>About</button>
-            </a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#projects">
-              <button>Projects</button>
-            </a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#experience">
-              <button>Experience</button>
-            </a>
+            <a href="#experience">Experience</a>
           </li>
           <li>
-            <a href="#contact">
-              <button>Contact</button>
-            </a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
-      </>
-      {/* ) : (
-        <button>X</button>
-      )} */}
+      ) : (
+        <div className="nav-button-container">
+          <button className="nav-button" onClick={toggleMenu}>
+            <i className="las la-bars"></i>
+          </button>
+          {menuOpen && (
+            // <div className="">
+            <ul className="flex flex-col nav-menu">
+              <li>
+                <a href="#about" onClick={toggleMenu}>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#projects" onClick={toggleMenu}>
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#experience" onClick={toggleMenu}>
+                  Experience
+                </a>
+              </li>
+              <li>
+                <a href="#contact" onClick={toggleMenu}>
+                  Contact
+                </a>
+              </li>
+            </ul>
+            // </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
