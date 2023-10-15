@@ -172,12 +172,6 @@
   z-index: 99;
 }
 
-/* .copy-button {
-  padding: 2px;
-  background-color: white;
-  border: 1px solid gray;
-} */
-
 .titles {
   color: var(--accent-2-color);
   font-weight: 900;
@@ -186,25 +180,18 @@
   padding-right: 15px;
   /* border-bottom: 1px solid #ffffff50; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-  /* background-color: var(--primary-color); */
-  /* border-bottom: 1px solid white; */
 }
 
 .socials {
   position: absolute;
-  bottom: 0;
+  bottom: 35px;
   left: 0;
-  /* border-radius: 10px; */
-  /* border: 1px solid var(--primary-color); */
   z-index: 100;
 }
 
 .socials svg {
   fill: var(--primary-color);
-  width: 2rem;
-  /* border-right: 1px solid var(--primary-color); */
-  /* border: 1px solid var(--background-color); */
+  width: 1.8rem;
   padding: 5px;
   margin: 2px;
 }
@@ -228,9 +215,6 @@
   height: 35px;
   background-color: var(--accent-2-color);
   z-index: 1000;
-
-  /* margin-top: 5px;
-  margin-right: 10px; */
 }
 
 .navigation button {
@@ -245,11 +229,6 @@
   padding: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-/* .navigation a:hover {
-  background-color: var(--background-color);
-  color: var(--primary-color);
-} */
 
 .navigation button:hover {
   background-color: var(--background-color);
@@ -267,7 +246,7 @@
   height: 100vh;
   z-index: 1000;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.7rem;
   width: 50vw;
 }
 
@@ -278,17 +257,6 @@
 
 .nav-menu a:hover {
   color: var(--background-color);
-}
-
-/* .nav-menu ul:hover {
-  width: 50vw;
-} */
-
-/* .nav-button-container {
-  width: 300px;
-} */
-
-.nav-button {
 }
 
 .nav-button i {
