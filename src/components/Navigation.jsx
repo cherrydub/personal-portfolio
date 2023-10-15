@@ -28,7 +28,7 @@ export default function Navigation({ device }) {
       ) : (
         <div className="nav-button-container" onClick={toggleMenu}>
           {/* <button className="nav-button"> */}
-          <i className="las la-bars pr-2 pl-2"></i>
+          <i className="las la-bars pr-2 pl-2 hover:cursor-pointer"></i>
           {/* </button> */}
           {menuOpen && (
             // <div className="">
