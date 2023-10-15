@@ -32,10 +32,31 @@ export default function Navigation({ device }) {
       ) : (
         <div className="nav-button-container" onClick={toggleMenu}>
           {/* <button className="nav-button"> */}
-          <i
+          {menuOpen ? (
+            <i
+              class="las la-caret-square-down pr-4 pl-2 pt-1 hover:cursor-pointer"
+              style={{
+                backgroundColor: "var(--secondary-color)",
+                width: "50px",
+              }}
+            ></i>
+          ) : (
+            <i
+              className="las la-caret-square-left pr-4 pl-2 pt-1 hover:cursor-pointer"
+              style={{
+                backgroundColor: "var(--secondary-color)",
+                width: "50px",
+              }}
+            ></i>
+          )}
+          {/* <i
             className="las la-bars pr-2 pl-2 hover:cursor-pointer"
             style={{ backgroundColor: "var(--secondary-color)" }}
           ></i>
+          <i
+            class="las la-caret-square-left"
+            style={{ backgroundColor: "var(--secondary-color)" }}
+          ></i> */}
           {/* </button> */}
           {menuOpen && (
             // <div className="">

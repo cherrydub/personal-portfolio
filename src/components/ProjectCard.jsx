@@ -41,6 +41,7 @@ export default function ProjectCard({
         {siteLink && (
           <a href={siteLink} target="_blank" rel="noopener noreferrer">
             <i class="lab la-internet-explorer" title="Website"></i>
+            {/* <i class="las la-external-link-alt" title="Website"></i> */}
           </a>
         )}
 
