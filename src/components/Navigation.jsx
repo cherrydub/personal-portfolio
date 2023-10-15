@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import NavigationMenu from "./NavigationMenu";
 
 export default function Navigation({ device }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,33 +29,38 @@ export default function Navigation({ device }) {
       ) : (
         <div className="nav-button-container" onClick={toggleMenu}>
           {/* <button className="nav-button"> */}
-          <i className="las la-bars pr-2 pl-2 hover:cursor-pointer"></i>
+          <i
+            className="las la-bars pr-2 pl-2 hover:cursor-pointer"
+            style={{ backgroundColor: "var(--secondary-color)" }}
+          ></i>
           {/* </button> */}
           {menuOpen && (
             // <div className="">
-            <ul className="flex flex-col nav-menu">
-              <li>
-                <a href="#about" onClick={toggleMenu}>
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#projects" onClick={toggleMenu}>
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a href="#experience" onClick={toggleMenu}>
-                  Experience
-                </a>
-              </li>
-              <li>
-                <a href="#contact" onClick={toggleMenu}>
-                  Contact
-                </a>
-              </li>
-            </ul>
-            // </div>
+            <>
+              {/* <ul className="flex flex-col nav-menu">
+                <li>
+                  <a href="#about" onClick={toggleMenu}>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#projects" onClick={toggleMenu}>
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="#experience" onClick={toggleMenu}>
+                    Experience
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact" onClick={toggleMenu}>
+                    Contact
+                  </a>
+                </li>
+              </ul> */}
+              <NavigationMenu toggleMenu={toggleMenu} />
+            </>
           )}
         </div>
       )}
