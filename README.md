@@ -10,3 +10,5 @@ for light icons: https://icons8.com/
 
 -animation
 framer motion: https://www.framer.com/motion/
+
+![Location](https://img.shields.io/badge/London,%20UK-green?style=for-the-badge)
