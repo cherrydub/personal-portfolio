@@ -7,7 +7,7 @@ export default function NavigationMenu({ toggleMenu }) {
       <div
         style={{
           width: "50%",
-          backgroundColor: "var(--secondary-color)",
+          backgroundColor: "var(--accent-2-color)",
           //   borderLeft: "1px solid #ffffff50",
         }}
       >
