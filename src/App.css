@@ -219,6 +219,7 @@
 .navigation a {
   color: var(--background-color);
   padding: 10px;
+  height: 35px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 

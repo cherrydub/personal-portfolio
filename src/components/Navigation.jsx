@@ -11,7 +11,10 @@ export default function Navigation({ device }) {
   return (
     <div className="navigation text-right">
       {device === "comp" ? (
-        <ul className="flex flex-row flex-wrap">
+        <ul
+          className="flex flex-row flex-wrap"
+          style={{ backgroundColor: "var(--secondary-color)" }}
+        >
           <a className="li-link" href="#about">
             <li>About</li>
           </a>
