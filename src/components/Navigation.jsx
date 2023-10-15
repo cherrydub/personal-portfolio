@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavigationMenu from "./NavigationMenu";
 
 export default function Navigation({ device }) {
@@ -8,6 +8,12 @@ export default function Navigation({ device }) {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+    if (device === "comp") {
+      setMenuOpen(false);
+    }
+  }, [device]);
+
   return (
     <div className="navigation text-right">
       {device === "comp" ? (
@@ -16,17 +22,25 @@ export default function Navigation({ device }) {
           style={{ backgroundColor: "var(--secondary-color)" }}
         >
           <a className="li-link" href="#about">
-            <li>About</li>
+            <li>
+              About<i class="las la-id-card"></i>
+            </li>
           </a>
           <a className="li-link" href="#projects">
-            <li>Projects</li>
+            <li>
+              Projects<i class="las la-terminal"></i>
+            </li>
           </a>
 
           <a className="li-link" href="#experience">
-            <li>Experience</li>
+            <li>
+              Experience<i class="las la-briefcase"></i>
+            </li>
           </a>
           <a className="li-link" href="#contact">
-            <li>Contact</li>
+            <li>
+              Contact <i class="las la-envelope"></i>
+            </li>
           </a>
         </ul>
       ) : (
