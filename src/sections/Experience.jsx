@@ -17,6 +17,7 @@ export default function Experience() {
             <br />
           </div> */}
           <ExperienceCard
+            jobURL={"https://northcoders.com/"}
             description={
               "Immersive 13-week bootcamp designed to equip aspiring tech professionals with the skills and knowledge they need to succeed in web development. With a focus on progressive learning, the program is packed with daily tasks, mini-projects, and portfolio-worthy material that challenges and inspires students every step of the way. Intense and rewarding, with a comprehensive curriculum and a hands-on learning approach that provided practical experience in web development. The knowledgeable teachers and tutors were always available to offer guidance and support, helping me to build a strong portfolio and gain valuable insights on how to learn more efficiently. Thanks to Northcoders, I now feel fully job-ready and confident in my ability to tackle complex web development challenges. The experience has been transformative, not just in terms of my technical skills, but also in terms of my mindset and approach to learning. I would highly recommend this bootcamp to anyone looking to break into the tech industry"
             }
@@ -29,6 +30,7 @@ export default function Experience() {
           />
 
           <ExperienceCard
+            jobURL={"https://www.mac-seven.com/"}
             description={
               "Worked as an IT consultant with a range of clients across various industries. Gained valuable experience with Mac- Seven, a leading managed service provider serving diverse clients including schools and businesses. Provided remote IT support and managed a wide range of systems, including Windows and Mac machines, and oversaw server, firewall, hardware, and software maintenance. Developed an extensive knowledge of various company setups and acquired a comprehensive understanding of the intricacies of IT management Honed skills in managing and troubleshooting IT issues Confident in leveraging expertise to make valuable contributions to any tech role"
             }

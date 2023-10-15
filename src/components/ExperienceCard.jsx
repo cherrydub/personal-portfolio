@@ -1,10 +1,18 @@
 import React from "react";
 
-export default function ExperienceCard({ jobShield, timeShield, description }) {
+export default function ExperienceCard({
+  jobShield,
+  jobURL,
+  timeShield,
+  description,
+}) {
   return (
     <div className="project-card flex flex-col self-stretch relative">
       <div className="flex absolute top-0 left-0">
-        <img src={jobShield} alt="" />
+        <a href={jobURL} target="_blank">
+          <img src={jobShield} alt="" />
+        </a>
+
         <img src={timeShield} alt="" />
       </div>
       <br />

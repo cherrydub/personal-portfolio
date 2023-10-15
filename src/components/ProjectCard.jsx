@@ -22,7 +22,7 @@ export default function ProjectCard({
       </div>
       <div>{description}</div>
       {/* <img src={imgSrc} alt={title} width={"50px"} /> */}
-      <div className="links">
+      <div className="">
         {githubLink && (
           <a href={githubLink} target="_blank" rel="noopener noreferrer">
             <i class="lab la-github-alt" title="GitHub"></i>

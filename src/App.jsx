@@ -76,7 +76,7 @@ function App() {
         </button>
       </LeftBar>
       <div className="main-sections">
-        {/* <Starter /> */}
+        <Starter />
         <About />
         <Projects />
         <Experience />
