@@ -92,6 +92,10 @@
   background-color: var(--neutral-1-color);
   border: 2px solid var(--background-color);
   padding: 10px;
+  @media (max-width: 600px) {
+    min-width: 100%;
+    max-width: 100%;
+  }
   /* padding: 2px; */
 
   /* text-wrap: wrap;
