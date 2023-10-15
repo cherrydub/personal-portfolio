@@ -11,24 +11,25 @@ export default function Navigation({ device }) {
     <div className="navigation text-right">
       {device === "comp" ? (
         <ul className="flex flex-row flex-wrap">
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          <a className="li-link" href="#about">
+            <li>About</li>
+          </a>
+          <a className="li-link" href="#projects">
+            <li>Projects</li>
+          </a>
+
+          <a className="li-link" href="#experience">
+            <li>Experience</li>
+          </a>
+          <a className="li-link" href="#contact">
+            <li>Contact</li>
+          </a>
         </ul>
       ) : (
-        <div className="nav-button-container">
-          <button className="nav-button" onClick={toggleMenu}>
-            <i className="las la-bars"></i>
-          </button>
+        <div className="nav-button-container" onClick={toggleMenu}>
+          {/* <button className="nav-button"> */}
+          <i className="las la-bars pr-2 pl-2"></i>
+          {/* </button> */}
           {menuOpen && (
             // <div className="">
             <ul className="flex flex-col nav-menu">

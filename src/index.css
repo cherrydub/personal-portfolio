@@ -31,6 +31,7 @@
   --secondary-color: gray;
   --accent-1-color: #3b3561;
   --accent-2-color: orange;
+  /* --neutral-1-color: white; */
   --neutral-1-color: #ececec;
   /* --neutral-1-color: #e8e8e8; */
   --neutral-2-colr: #eeeded;
@@ -42,7 +43,7 @@ svg path {
 }
 
 body {
-  transition: background-color 2s ease, color 0.5s ease;
+  /* transition: background-color 2s ease, color 0.5s ease; */
   background-color: var(--background-color);
   color: var(--primary-color);
   margin-left: 40px;

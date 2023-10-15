@@ -13,14 +13,14 @@ export default function ProjectCard({
   githubBe,
 }) {
   return (
-    <div className="project-card">
+    <div className="project-card flex flex-col self-stretch">
       <h2 className="font-bold">{title}</h2>
       <div className="stack flex flex-wrap">
         {stack.map((tech) => (
           <img key={tech} src={badgeObj[tech]} alt={tech} />
         ))}
       </div>
-      <p>{description}</p>
+      <div>{description}</div>
       {/* <img src={imgSrc} alt={title} width={"50px"} /> */}
       <div className="links">
         {githubLink && (

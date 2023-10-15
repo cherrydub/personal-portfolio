@@ -85,7 +85,7 @@ export default function Projects() {
               "psql",
             ]}
             description={
-              "PSQL database holds user info. Users can signup/login and upload an image, the website will then detect and outline any faces on the image"
+              "PSQL database holds user info. Users can signup/login and upload an image, the website will then detect, count and outline any faces on the image"
             }
             imgSrc={"cherry-cherries.svg"}
             githubFe={"https://github.com/cherrydub/face-recognition-fe"}
@@ -108,7 +108,7 @@ export default function Projects() {
             title="Blocklist"
             stack={["dart", "flutter", "supabase", "prisma", "typescript"]}
             description={
-              "Interactive task management app that uses different sized blocks to visualize which tasks are most important. Created this app as traditional time management tools use a time based system, as opposed to priority, and having larger blocks representing more urgent tasks is very intuitive. BlockList also includes a user system with authentication, and stores the task blocks position and size in a server meaning it can be accessed from multiple devices/by multiple users."
+              "Interactive task management app that uses different sized blocks to visualize which tasks are most important. Having larger blocks representing more urgent tasks is very intuitive. BlockList also includes a user system with authentication, and stores the task blocks position and size in a server meaning it can be accessed from multiple devices"
             }
             imgSrc={"cherry-cherries.svg"}
             githubLink={"https://github.com/git-gremlins/blocklist"}
@@ -119,7 +119,9 @@ export default function Projects() {
             badgeObj={badgeObj}
             title="JSON Formatter"
             stack={["html", "css", "javascript", "react"]}
-            description={"this shit was annoying af to do"}
+            description={
+              "This started off purely as a personal project to help me with building/scanning API's. Many times it is difficult to find the exact path needed to manipulate certain data within a JSON. This tool allows users to easily find a mapped out set of JSON keys, in a tree like structure."
+            }
             imgSrc={"cherry-cherries.svg"}
             githubLink={"https://cherrydub.com/"}
             siteLink={"https://cherrydub.com/"}
