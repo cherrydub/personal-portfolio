@@ -8,13 +8,6 @@ export default function Contact({}) {
   const [state, handleSubmit] = useForm(formID);
   const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
-  // const [submitCount, setSubmitCount] = useState(0);
-
-  // function clickSubmit(){
-  //   toast('Sending...')
-  //   if (state.succeeded)
-
-  // }
 
   useEffect(() => {
     if (state.submitting) {
@@ -26,7 +19,7 @@ export default function Contact({}) {
         setTimeout(() => {
           setSubmitted(false);
           setName("");
-        }, 15000);
+        }, 10000);
       }
       if (state.errors?.length ?? 0 > 0) {
         toast.error("Email Failed!");
@@ -100,9 +93,6 @@ export default function Contact({}) {
                     />
                     <br />
 
-                    {/* <label className="font-bold" htmlFor="email">
-                  Email:
-                </label> */}
                     <input
                       className="pl-3"
                       // placeholder="your e-mail"
@@ -113,9 +103,7 @@ export default function Contact({}) {
                       placeholder="Email"
                     />
                     <br />
-                    {/* <label className="font-bold" htmlFor="message">
-                  Message:
-                </label> */}
+
                     <textarea
                       required
                       placeholder="Message"
@@ -136,8 +124,6 @@ export default function Contact({}) {
                           border: "none",
                         }}
                         type="submit"
-                        // onClick={clickSubmit}
-                        // disabled={state.submitting}
                         className="flex items-center justify-center ml-auto"
                       >
                         Submit
