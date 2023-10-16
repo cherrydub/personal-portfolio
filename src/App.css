@@ -15,7 +15,7 @@
 }
 
 .section-item {
-  min-height: 20vh;
+  /* min-height: 20vh; */
   background-color: var(--neutral-1-color);
   padding: 10px;
   /* border: 1px solid #ffffff50; */
@@ -116,7 +116,7 @@
 }
 
 .ul-li i {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 .project-title {
   background-color: var(--accent-2-color);
@@ -227,7 +227,7 @@
   color: var(--primary-color);
   padding: 10px;
   height: 35px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .navigation button:hover {
@@ -303,7 +303,8 @@
 }
 
 #contact {
-  padding-bottom: 25px;
+  margin-bottom: 5px;
+  /* padding-bottom: 25px; */
 }
 
 .contact-card {
