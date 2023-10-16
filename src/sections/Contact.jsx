@@ -12,7 +12,7 @@ export default function Contact({}) {
   useEffect(() => {
     if (state.succeeded) {
       toast.success("Email Sent!");
-    } else if (state.errors.length > 0) {
+    } else if (state.errors?.length ?? 0 > 0) {
       toast.error("Email Error!");
     }
   }, [state.succeeded, state.errors]);
