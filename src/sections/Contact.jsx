@@ -8,20 +8,43 @@ export default function Contact({}) {
   const [state, handleSubmit] = useForm(formID);
   const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  // const [submitCount, setSubmitCount] = useState(0);
+
+  // function clickSubmit(){
+  //   toast('Sending...')
+  //   if (state.succeeded)
+
+  // }
 
   useEffect(() => {
-    console.log(state, "this is state");
+    toast("Sending...");
     if (state.succeeded) {
       toast.success("Email Sent!");
       setSubmitted(true);
       setTimeout(() => {
         setSubmitted(false);
         setName("");
-      }, 10000);
-    } else if (state.errors?.length ?? 0 > 0) {
-      toast.error("Email Error!");
+      }, 15000);
     }
-  }, [state.succeeded, state.errors]);
+    if (state.errors?.length ?? 0 > 0) {
+      toast.error("Email Failed!");
+    }
+  }, [state.submitting]);
+
+  // useEffect(() => {
+  //   toast("sending..");
+  //   console.log(state, "this is state");
+  //   if (state.succeeded) {
+  //     toast.success("Email Sent!");
+  //     setSubmitted(true);
+  //     setTimeout(() => {
+  //       setSubmitted(false);
+  //       setName("");
+  //     }, 10000);
+  //   } else if (state.errors?.length ?? 0 > 0) {
+  //     toast.error("Email Error!");
+  //   }
+  // }, [state.succeeded, state.errors]);
 
   return (
     <>
@@ -110,7 +133,8 @@ export default function Contact({}) {
                           border: "none",
                         }}
                         type="submit"
-                        disabled={state.submitting}
+                        // onClick={clickSubmit}
+                        // disabled={state.submitting}
                         className="flex items-center justify-center ml-auto"
                       >
                         Submit
