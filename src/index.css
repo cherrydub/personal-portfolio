@@ -111,3 +111,11 @@ a:hover,
 i {
   font-size: 1.5rem;
 }
+
+input,
+textarea {
+  background-color: var(--neutral-2-color);
+  color: var(--background-color);
+  border-radius: 6px;
+  height: 1.5rem;
+}
