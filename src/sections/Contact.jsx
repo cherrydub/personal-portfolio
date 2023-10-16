@@ -49,11 +49,11 @@ export default function Contact({}) {
             <div className="contact-card flex flex-col justify-center items-center">
               {!submitted ? (
                 <>
-                  <span>Get in touch easily:</span>
+                  <span>Get in touch:</span>
                   <p></p>
                   <br />
                   <form
-                    onSubmit={submitForm}
+                    onSubmit={(e) => submitForm(e)}
                     className="flex flex-col"
                     style={{ width: "80%" }}
                   >
