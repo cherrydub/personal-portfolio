@@ -10,31 +10,18 @@ export default function Contact({}) {
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
+    console.log(state, "this is state");
     if (state.succeeded) {
       toast.success("Email Sent!");
       setSubmitted(true);
       setTimeout(() => {
         setSubmitted(false);
-        setName();
+        setName("");
       }, 10000);
     } else if (state.errors?.length ?? 0 > 0) {
       toast.error("Email Error!");
     }
-  }, [state]);
-
-  // const submitForm = async (e) => {
-  //   e.preventDefault(); // Prevent the page from refreshing
-  //   const response = await handleSubmit();
-
-  //   if (response.ok) {
-  //     toast.success("Email sent!"); // Display a success toast message
-  //     setName(""); // Reset the name field
-  //     setSubmitted(true);
-  //     // You can similarly reset other form fields if needed
-  //   } else {
-  //     toast.error("Email not sent. Please try again."); // Handle errors with an error toast message
-  //   }
-  // };
+  }, [state.succeeded, state.errors]);
 
   return (
     <>
