@@ -115,6 +115,9 @@
   max-width: 500px;
 }
 
+.ul-li i {
+  font-size: 1.3rem;
+}
 .project-title {
   background-color: var(--accent-2-color);
 }
