@@ -33,13 +33,13 @@ export default function Contact({}) {
         <h1 className="titles">Contact</h1>
         <div>
           <section></section>
-          <div className="contact-container flex flex-wrap text-center">
-            <div className="contact-card">
+          <div className="contact-container flex flex-wrap text-center justify-center items-center">
+            <div className="contact-card-left flex justify-center">
               <a
                 href="mailto:chriscoding@icloud.com"
                 title="chriscoding@icloud.comk"
               >
-                <i class="las la-at"></i>
+                <i class="las la-envelope-square"></i>
               </a>
 
               <a

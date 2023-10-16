@@ -13,6 +13,7 @@
   max-width: 1000px;
   justify-content: center;
   min-height: 100svh;
+  opacity: 0.95;
   /* min-width: 400px; */
 }
 
