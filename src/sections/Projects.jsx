@@ -59,74 +59,62 @@ export default function Projects() {
   return (
     <div className="projects section" id="projects">
       <h1 className="titles">Projects</h1>
-      <div>
-        <section></section>
-        <div className="projects-container flex items-start flex-wrap">
-          {/* <div>
-            {Object.entries(badgeObj).map(([tech, badgeUrl]) => (
-              <div key={tech}>
-                <img src={badgeUrl} alt={tech} />
-              </div>
-            ))}
-            <br />
-          </div> */}
-
-          <ProjectCard
-            badgeObj={badgeObj}
-            title="Smart Brain"
-            stack={[
-              "html",
-              "css",
-              "javascript",
-              "tailwind",
-              "react",
-              "nodejs",
-              "express",
-              "psql",
-            ]}
-            description={
-              "PSQL database holds user info. Users can signup/login and upload an image, the website will then detect, count and outline any faces on the image"
-            }
-            imgSrc={"cherry-cherries.svg"}
-            githubFe={"https://github.com/cherrydub/face-recognition-fe"}
-            githubBe={"https://github.com/cherrydub/face-recognition-brain-api"}
-            siteLink={"https://smartbrain.cherrydub.com/"}
-          />
-          <ProjectCard
-            badgeObj={badgeObj}
-            title="Win98 Styled Portfolio"
-            stack={["html", "css", "javascript", "react", "tailwind"]}
-            description={
-              "Fun nostalgic website to showcase CV, portfolio, and link to socials. Website has closable/draggable windows, very interactive"
-            }
-            imgSrc={"cherry-cherries.svg"}
-            githubLink={"https://cherrydub.com/"}
-            siteLink={"https://win98.cherrydub.com/"}
-          />
-          <ProjectCard
-            badgeObj={badgeObj}
-            title="Blocklist"
-            stack={["dart", "flutter", "supabase", "prisma", "typescript"]}
-            description={
-              "Interactive task management app that uses different sized blocks to visualize which tasks are most important. Having larger blocks representing more urgent tasks is very intuitive. BlockList also includes a user system with authentication, and stores the task blocks position and size in a server meaning it can be accessed from multiple devices"
-            }
-            imgSrc={"cherry-cherries.svg"}
-            githubLink={"https://github.com/git-gremlins/blocklist"}
-            siteLink={"https://northcoders.com/projects/may-2023/blocklist"}
-            youtubeLink={"https://www.youtube.com/watch?v=sMBatcWxz8M"}
-          />
-          <ProjectCard
-            badgeObj={badgeObj}
-            title="JSON Formatter"
-            stack={["html", "css", "javascript", "react"]}
-            description={
-              "This started off purely as a personal project to help me with building/scanning API's. Many times it is difficult to find the exact path needed to manipulate certain data within a JSON. This tool allows users to easily find a mapped out set of JSON keys, in a tree like structure."
-            }
-            imgSrc={"cherry-cherries.svg"}
-            githubLink={"https://cherrydub.com/"}
-            siteLink={"https://cherrydub.com/"}
-          />
-        </div>
+      <div className="flex items-start flex-wrap">
+        <ProjectCard
+          badgeObj={badgeObj}
+          title="Smart Brain"
+          stack={[
+            "html",
+            "css",
+            "javascript",
+            "tailwind",
+            "react",
+            "nodejs",
+            "express",
+            "psql",
+          ]}
+          description={
+            "PSQL database holds user info. Users can signup/login and upload an image, the website will then detect, count and outline any faces on the image"
+          }
+          imgSrc={"cherry-cherries.svg"}
+          githubFe={"https://github.com/cherrydub/face-recognition-fe"}
+          githubBe={"https://github.com/cherrydub/face-recognition-brain-api"}
+          siteLink={"https://smartbrain.cherrydub.com/"}
+        />
+        <ProjectCard
+          badgeObj={badgeObj}
+          title="Win98 Styled Portfolio"
+          stack={["html", "css", "javascript", "react", "tailwind"]}
+          description={
+            "Fun nostalgic website to showcase CV, portfolio, and link to socials. Website has closable/draggable windows, very interactive"
+          }
+          imgSrc={"cherry-cherries.svg"}
+          githubLink={"https://cherrydub.com/"}
+          siteLink={"https://win98.cherrydub.com/"}
+        />
+        <ProjectCard
+          badgeObj={badgeObj}
+          title="Blocklist"
+          stack={["dart", "flutter", "supabase", "prisma", "typescript"]}
+          description={
+            "Interactive task management app that uses different sized blocks to visualize which tasks are most important. Having larger blocks representing more urgent tasks is very intuitive. BlockList also includes a user system with authentication, and stores the task blocks position and size in a server meaning it can be accessed from multiple devices"
+          }
+          imgSrc={"cherry-cherries.svg"}
+          githubLink={"https://github.com/git-gremlins/blocklist"}
+          siteLink={"https://northcoders.com/projects/may-2023/blocklist"}
+          youtubeLink={"https://www.youtube.com/watch?v=sMBatcWxz8M"}
+        />
+        <ProjectCard
+          badgeObj={badgeObj}
+          title="JSON Formatter"
+          stack={["html", "css", "javascript", "react"]}
+          description={
+            "This started off purely as a personal project to help me with building/scanning API's. Many times it is difficult to find the exact path needed to manipulate certain data within a JSON. This tool allows users to easily find a mapped out set of JSON keys, in a tree like structure."
+          }
+          imgSrc={"cherry-cherries.svg"}
+          githubLink={"https://cherrydub.com/"}
+          siteLink={"https://cherrydub.com/"}
+        />
       </div>
     </div>
   );

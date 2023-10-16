@@ -10,7 +10,7 @@
   font-size: 16px;
   margin: 0 auto;
   display: flex;
-  max-width: 1000px;
+  max-width: 800px;
   justify-content: center;
   min-height: 100svh;
   opacity: 0.95;
@@ -49,6 +49,7 @@ body {
   background-color: var(--background-color);
   color: var(--primary-color);
   margin-left: 40px;
+  /* border: 1px solid green; */
   /* margin-right: 10px; */
   /* border: 3px solid pink; */
 }
@@ -58,44 +59,21 @@ body {
   font-size: 0.7rem;
 }
 
-.main-sections {
-  /* margin-right: 5px; */
-  /* border-left: 1px dotted var(--accent-2-color);
-  border-right: 1px dotted white; */
-}
-
 h1 {
   font-size: 0.9rem;
 }
 
 button {
-  /* border-radius: 8px; */
-  /* margin-left: 5px; */
-  /* border: 1px solid var(--accent-2-color); */
   padding: 0.05em 0.5em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  /* background-color: var(--background-color); */
   cursor: pointer;
 }
 
 button:hover {
   background-color: var(--secondary-color);
 }
-
-/* .project-card i a {
-  background-color: pink;
-} */
-
-/* button:hover {
-  border: 2px solid var(--accent-2-color);
-} */
-
-/* button:focus,
-button:focus-visible {
-  outline: 4px auto var(--primary-color);
-} */
 
 a,
 .link {
@@ -108,24 +86,13 @@ a:hover,
   color: var(--primary-color);
 }
 
-/* h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-} */
-
 i {
   font-size: 1.5rem;
 }
-
-/* .contact-button button {
-  border: 2px solid green;
-} */
 
 input,
 textarea {
   background-color: var(--background-color);
   color: var(--primary-color);
-  /* border-radius: 6px; */
   height: 1.5rem;
-  /* opacity: 0.8; */
 }

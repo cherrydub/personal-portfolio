@@ -7,7 +7,7 @@ export default function ExperienceCard({
   description,
 }) {
   return (
-    <div className="project-card flex flex-col self-stretch relative">
+    <div className="experience-card flex flex-col self-stretch relative">
       <div className="flex absolute top-0 left-0">
         <a href={jobURL} target="_blank">
           <img src={jobShield} alt="" />
