@@ -10,13 +10,12 @@ export default function Contact({}) {
   // const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
-    console.log(state, "state here");
     if (state.succeeded) {
       toast.success("Email Sent!");
-    } else {
+    } else if (state.errors.length > 0) {
       toast.error("Email Error!");
     }
-  }, [state]);
+  }, [state.succeeded, state.errors]);
 
   // const submitForm = async (e) => {
   //   e.preventDefault(); // Prevent the page from refreshing
