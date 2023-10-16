@@ -27,21 +27,6 @@ export default function Contact({}) {
     }
   }, [state.submitting]);
 
-  // useEffect(() => {
-  //   toast("sending..");
-  //   console.log(state, "this is state");
-  //   if (state.succeeded) {
-  //     toast.success("Email Sent!");
-  //     setSubmitted(true);
-  //     setTimeout(() => {
-  //       setSubmitted(false);
-  //       setName("");
-  //     }, 10000);
-  //   } else if (state.errors?.length ?? 0 > 0) {
-  //     toast.error("Email Error!");
-  //   }
-  // }, [state.succeeded, state.errors]);
-
   return (
     <>
       <div className="contact section " id="contact">
@@ -50,18 +35,26 @@ export default function Contact({}) {
           <section></section>
           <div className="contact-container flex flex-wrap text-center">
             <div className="contact-card">
-              <a href="mailto:chriscoding@icloud.com">
+              <a
+                href="mailto:chriscoding@icloud.com"
+                title="chriscoding@icloud.comk"
+              >
                 <i class="las la-at"></i>
               </a>
 
               <a
                 href="https://www.linkedin.com/in/wisniewskichris/"
                 target="_blank"
+                title="LinkedIn"
               >
                 <i class="lab la-linkedin"></i>
               </a>
 
-              <a href="https://github.com/cherrydub" target="_blank">
+              <a
+                href="https://github.com/cherrydub"
+                target="_blank"
+                title="GitHub"
+              >
                 <i class="lab la-github-square"></i>
               </a>
             </div>
@@ -117,11 +110,16 @@ export default function Contact({}) {
                         className="text-blue-700"
                         href="mailto:chriscoding@icloud.com"
                       ></a>
+
                       <button
+                        id="contact-button"
                         style={{
-                          width: "50px",
+                          width: "100px",
+                          marginTop: "10px",
+                          height: "25px",
                           backgroundColor: "var(--background-color)",
                           border: "none",
+                          cursor: "pointer", // Add this line to change the cursor on hover
                         }}
                         type="submit"
                         className="flex items-center justify-center ml-auto"
