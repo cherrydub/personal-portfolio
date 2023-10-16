@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { toast } from "sonner"; // Import toast from "sonner"
 
@@ -9,19 +9,27 @@ export default function Contact({}) {
   const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  const submitForm = async (e) => {
-    e.preventDefault(); // Prevent the page from refreshing
-    const response = await handleSubmit();
-
-    if (response.ok) {
-      toast.success("Email sent!"); // Display a success toast message
-      setName(""); // Reset the name field
-      setSubmitted(true);
-      // You can similarly reset other form fields if needed
+  useEffect(() => {
+    if (state.succeeded) {
+      toast.success("Email Sent!");
     } else {
-      toast.error("Email not sent. Please try again."); // Handle errors with an error toast message
+      toast.error("Email Error!");
     }
-  };
+  }, [submitted]);
+
+  // const submitForm = async (e) => {
+  //   e.preventDefault(); // Prevent the page from refreshing
+  //   const response = await handleSubmit();
+
+  //   if (response.ok) {
+  //     toast.success("Email sent!"); // Display a success toast message
+  //     setName(""); // Reset the name field
+  //     setSubmitted(true);
+  //     // You can similarly reset other form fields if needed
+  //   } else {
+  //     toast.error("Email not sent. Please try again."); // Handle errors with an error toast message
+  //   }
+  // };
 
   return (
     <>
@@ -47,13 +55,13 @@ export default function Contact({}) {
               </a>
             </div>
             <div className="contact-card flex flex-col justify-center items-center">
-              {!submitted ? (
+              {!state.succeeded ? (
                 <>
                   <span>Get in touch:</span>
                   <p></p>
                   <br />
                   <form
-                    onSubmit={(e) => submitForm(e)}
+                    onSubmit={handleSubmit}
                     className="flex flex-col"
                     style={{ width: "80%" }}
                   >
