@@ -30,53 +30,55 @@ export default function Contact({}) {
         <div>
           <section></section>
           <div className="contact-container flex flex-wrap ">
-            <form
-              onSubmit={handleSubmit}
-              className="flex flex-col"
-              style={{ width: "200px" }}
-            >
-              <label className="font-bold" htmlFor="name">
-                Name:
-              </label>
-              <input
-                // placeholder="name"
-                required
-                id="name"
-                type="text"
-                name="name"
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
-              />
+            <div className="contact-card">first section</div>
+            <div className="contact-card flex justify-center items-center">
+              <form
+                onSubmit={handleSubmit}
+                className="flex flex-col"
+                style={{ width: "70%" }}
+              >
+                <label className="font-bold" htmlFor="name">
+                  Name:
+                </label>
+                <input
+                  // placeholder="name"
+                  required
+                  id="name"
+                  type="text"
+                  name="name"
+                  onChange={(e) => {
+                    setName(e.target.value);
+                  }}
+                />
 
-              <label className="font-bold" htmlFor="email">
-                Email:
-              </label>
-              <input
-                // placeholder="your e-mail"
-                required
-                id="email"
-                type="email"
-                name="email"
-              />
+                <label className="font-bold" htmlFor="email">
+                  Email:
+                </label>
+                <input
+                  // placeholder="your e-mail"
+                  required
+                  id="email"
+                  type="email"
+                  name="email"
+                />
 
-              <label className="font-bold" htmlFor="message">
-                Message:
-              </label>
-              <textarea
-                required
-                // placeholder="message"
-                id="message"
-                name="message"
-                className="h-40 resize-y p-2"
-              ></textarea>
+                <label className="font-bold" htmlFor="message">
+                  Message:
+                </label>
+                <textarea
+                  required
+                  // placeholder="message"
+                  id="message"
+                  name="message"
+                  className="h-40 resize-y p-2"
+                ></textarea>
 
-              <div className="flex mt-1">
-                <a
-                  className="text-blue-700"
-                  href="mailto:chriscoding@icloud.com"
-                >
-                  {/* <button
+                <div className="flex mt-1">
+                  <a
+                    className="text-blue-700"
+                    href="mailto:chriscoding@icloud.com"
+                  >
+                    {/* <button
                     type="button"
                     style={{ width: "50px" }}
                     className="hover:bg-gray-100 flex items-center justify-center ml-auto"
@@ -88,33 +90,34 @@ export default function Contact({}) {
                       alt=""
                     />
                   </button> */}
-                </a>
-                <button
-                  style={{ width: "50px" }}
-                  type="submit"
-                  disabled={state.submitting}
-                  className="hover:bg-gray-100 flex items-center justify-center ml-auto"
-                >
-                  Submit
-                </button>
-              </div>
+                  </a>
+                  <button
+                    style={{ width: "50px" }}
+                    type="submit"
+                    disabled={state.submitting}
+                    className="flex items-center justify-center ml-auto"
+                  >
+                    Submit
+                  </button>
+                </div>
 
-              <ValidationError
-                prefix="Name"
-                field="name"
-                errors={state.errors}
-              />
-              <ValidationError
-                prefix="Email"
-                field="email"
-                errors={state.errors}
-              />
-              <ValidationError
-                prefix="Message"
-                field="message"
-                errors={state.errors}
-              />
-            </form>
+                <ValidationError
+                  prefix="Name"
+                  field="name"
+                  errors={state.errors}
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
+              </form>
+            </div>
           </div>
         </div>
       </div>

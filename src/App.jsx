@@ -56,9 +56,9 @@ function App() {
         <div className="flex pt-2 pl-3">
           <span className="device pr-2">
             {device === "comp" ? (
-              <i class="las la-laptop-code"></i>
+              <i className="las la-laptop-code"></i>
             ) : (
-              <i class="las la-mobile"></i>
+              <i className="las la-mobile"></i>
             )}
           </span>
           <TopLeft />
@@ -68,7 +68,7 @@ function App() {
         <Socials />
         <button onClick={toggleTheme} className="toggle-button flex flex-col">
           {theme === "dark" ? (
-            <i class="las la-adjust"></i>
+            <i className="las la-adjust"></i>
           ) : (
             <i className="lar la-sun"></i>
           )}
