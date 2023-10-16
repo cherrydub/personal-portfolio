@@ -80,7 +80,7 @@ function App() {
         <About />
         <Projects />
         <Experience />
-        {/* <Contact /> */}
+        <Contact />
       </div>
     </div>
   );
