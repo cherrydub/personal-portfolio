@@ -7,15 +7,16 @@ const formID = import.meta.env.VITE_FORM_KEY;
 export default function Contact({}) {
   const [state, handleSubmit] = useForm(formID);
   const [name, setName] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  // const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
+    console.log(state, "state here");
     if (state.succeeded) {
       toast.success("Email Sent!");
     } else {
       toast.error("Email Error!");
     }
-  }, [submitted]);
+  }, [state]);
 
   // const submitForm = async (e) => {
   //   e.preventDefault(); // Prevent the page from refreshing
@@ -57,7 +58,7 @@ export default function Contact({}) {
             <div className="contact-card flex flex-col justify-center items-center">
               {!state.succeeded ? (
                 <>
-                  <span>Get in touch:</span>
+                  <span>Get in touch easily:</span>
                   <p></p>
                   <br />
                   <form
