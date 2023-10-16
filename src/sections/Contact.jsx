@@ -7,11 +7,16 @@ const formID = import.meta.env.VITE_FORM_KEY;
 export default function Contact({}) {
   const [state, handleSubmit] = useForm(formID);
   const [name, setName] = useState("");
-  // const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
     if (state.succeeded) {
       toast.success("Email Sent!");
+      setSubmitted(true);
+      setTimeout(() => {
+        setSubmitted(false);
+        setName();
+      }, 10000);
     } else if (state.errors?.length ?? 0 > 0) {
       toast.error("Email Error!");
     }
@@ -54,8 +59,11 @@ export default function Contact({}) {
                 <i class="lab la-github-square"></i>
               </a>
             </div>
-            <div className="contact-card flex flex-col justify-center items-center">
-              {!state.succeeded ? (
+            <div
+              className="contact-card flex flex-col justify-center items-center"
+              style={{ height: "420px" }}
+            >
+              {!submitted ? (
                 <>
                   <span>Get in touch easily:</span>
                   <p></p>
@@ -140,7 +148,7 @@ export default function Contact({}) {
                   </form>
                 </>
               ) : (
-                "Thanks for the e-mail!"
+                `Thanks for the e-mail ${name}!`
               )}
             </div>
           </div>
