@@ -35,7 +35,7 @@ export default function Contact({}) {
               <form
                 onSubmit={handleSubmit}
                 className="flex flex-col"
-                style={{ width: "70%" }}
+                style={{ width: "200px" }}
               >
                 <label className="font-bold" htmlFor="name">
                   Name:
