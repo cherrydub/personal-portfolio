@@ -5,9 +5,14 @@ export default function NavigationMenu({ toggleMenu }) {
     <div className="nav-menu flex">
       <div className="blur-div" style={{ width: "50%" }}></div>
       <div
+        className="second-blur-div"
         style={{
           width: "50%",
-          backgroundColor: "var(--secondary-color)",
+          height: "100vh",
+          borderLeft: "1px solid var(--secondary-color)",
+          //   borderBottom: "1px solid var(--secondary-color)",
+          backgroundColor: "var(--background-color)",
+          //   height: "50vh",
           //   borderLeft: "1px solid #ffffff50",
         }}
       >

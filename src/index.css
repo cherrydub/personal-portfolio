@@ -22,7 +22,7 @@
   --accent-1-color: orange;
   --accent-2-color: #e2c2ff;
   --neutral-1-color: rgb(17, 17, 17);
-  --neutral-2-colr: gray;
+  --neutral-2-color: white;
 }
 
 [data-theme="light"] {
@@ -34,7 +34,7 @@
   /* --neutral-1-color: white; */
   --neutral-1-color: #ececec;
   /* --neutral-1-color: #e8e8e8; */
-  --neutral-2-color: #eeeded;
+  --neutral-2-color: white;
 }
 
 svg path {

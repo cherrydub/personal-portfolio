@@ -19,7 +19,7 @@ export default function Navigation({ device }) {
       {device === "comp" ? (
         <ul
           className="flex flex-row flex-wrap"
-          style={{ backgroundColor: "var(--secondary-color)" }}
+          // style={{ backgroundColor: "var(--neutral-2-color)" }}
         >
           <a className="li-link" href="#about">
             <li>
@@ -48,19 +48,23 @@ export default function Navigation({ device }) {
           {/* <button className="nav-button"> */}
           {menuOpen ? (
             <i
-              class="las la-caret-square-down pr-4 pl-2 pt-1 hover:cursor-pointer"
-              style={{
-                backgroundColor: "var(--secondary-color)",
-                width: "50px",
-              }}
+              class="las la-caret-square-down pr-2 pl-2 pt-1 hover:cursor-pointer"
+              style={
+                {
+                  // backgroundColor: "var(--neutral-2-color)",
+                  // width: "50px",
+                }
+              }
             ></i>
           ) : (
             <i
-              className="las la-caret-square-left pr-4 pl-2 pt-1 hover:cursor-pointer"
-              style={{
-                backgroundColor: "var(--secondary-color)",
-                width: "50px",
-              }}
+              className="las la-caret-square-left pr-2 pl-2 pt-1 hover:cursor-pointer"
+              style={
+                {
+                  // backgroundColor: "var(--neutral-2-color)",
+                  // width: "50px",
+                }
+              }
             ></i>
           )}
           {/* <i
