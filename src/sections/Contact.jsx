@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import { useCopyToClipboard } from "@uidotdev/usehooks";
 import { Toaster, toast } from "sonner";
 
 const formID = import.meta.env.VITE_FORM_KEY;
@@ -8,26 +7,19 @@ const formID = import.meta.env.VITE_FORM_KEY;
 export default function Contact({}) {
   const [state, handleSubmit] = useForm(formID);
   const [name, setName] = useState("");
-  const [countdown, setCountdown] = useState(5);
 
-  const submitForm = () => {
-    handleSubmit().then(toast.success(`${name}, email sent!`));
+  const submitForm = (e) => {
+    e.preventDefault();
+    handleSubmit().then((response) => {
+      if (response.ok) {
+        toast.success(`${name}, Email sent!`);
+        setName(""); // Reset the name field
+        // You can similarly reset other form fields if needed
+      } else {
+        toast.error("Email not sent. Please try again."); // Handle errors
+      }
+    });
   };
-
-  // useEffect(() => {
-  //   if (state.succeeded) {
-  //     const countdownInterval = setInterval(() => {
-  //       setCountdown((prevCountdown) => prevCountdown - 1);
-  //     }, 1000);
-
-  //     setTimeout(() => {
-  //       clearInterval(countdownInterval);
-  //       removeActiveComponent("Contact");
-  //     }, 5000);
-
-  //     return () => clearInterval(countdownInterval);
-  //   }
-  // }, [state.succeeded, removeActiveComponent]);
 
   return (
     <>
@@ -61,17 +53,14 @@ export default function Contact({}) {
                 className="flex flex-col"
                 style={{ width: "80%" }}
               >
-                {/* <label className="font-bold" htmlFor="name">
-                  Name:
-                </label> */}
                 <input
                   className="pl-3"
-                  // placeholder="name"
                   required
                   id="name"
                   placeholder="Name"
                   type="text"
                   name="name"
+                  value={name} // Bind the value to the state
                   onChange={(e) => {
                     setName(e.target.value);
                   }}
