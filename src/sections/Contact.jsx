@@ -20,7 +20,7 @@ export default function Contact({}) {
     } else if (state.errors?.length ?? 0 > 0) {
       toast.error("Email Error!");
     }
-  }, [state.succeeded, state.errors]);
+  }, [state]);
 
   // const submitForm = async (e) => {
   //   e.preventDefault(); // Prevent the page from refreshing
