@@ -17,17 +17,20 @@ export default function Contact({}) {
   // }
 
   useEffect(() => {
-    toast("Sending...");
-    if (state.succeeded) {
-      toast.success("Email Sent!");
-      setSubmitted(true);
-      setTimeout(() => {
-        setSubmitted(false);
-        setName("");
-      }, 15000);
-    }
-    if (state.errors?.length ?? 0 > 0) {
-      toast.error("Email Failed!");
+    if (state.submitting) {
+      toast("Sending...");
+    } else {
+      if (state.succeeded) {
+        toast.success("Email Sent!");
+        setSubmitted(true);
+        setTimeout(() => {
+          setSubmitted(false);
+          setName("");
+        }, 15000);
+      }
+      if (state.errors?.length ?? 0 > 0) {
+        toast.error("Email Failed!");
+      }
     }
   }, [state.submitting]);
 
@@ -75,7 +78,7 @@ export default function Contact({}) {
             >
               {!submitted ? (
                 <>
-                  <span>Get in touch easily:</span>
+                  <span>Get in touch:</span>
                   <p></p>
                   <br />
                   <form
