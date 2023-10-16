@@ -115,9 +115,9 @@ i {
 
 input,
 textarea {
-  background-color: var(--neutral-2-color);
-  color: black;
+  background-color: var(--background-color);
+  color: var(--primary-color);
   /* border-radius: 6px; */
   height: 1.5rem;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
