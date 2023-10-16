@@ -76,7 +76,7 @@ export default function Contact({}) {
                   className="text-blue-700"
                   href="mailto:chriscoding@icloud.com"
                 >
-                  <button
+                  {/* <button
                     type="button"
                     style={{ width: "50px" }}
                     className="hover:bg-gray-100 flex items-center justify-center ml-auto"
@@ -87,7 +87,7 @@ export default function Contact({}) {
                       src="https://win98icons.alexmeub.com/icons/png/outlook_express-2.png"
                       alt=""
                     />
-                  </button>
+                  </button> */}
                 </a>
                 <button
                   style={{ width: "50px" }}
