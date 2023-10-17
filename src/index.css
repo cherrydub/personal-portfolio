@@ -17,7 +17,7 @@
   font-size: 16px;
   margin: 0 auto;
   display: flex;
-  max-width: 800px;
+  /* max-width: 800px; */
   justify-content: center;
   min-height: 100svh;
   opacity: 0.95;
@@ -40,9 +40,7 @@
   --secondary-color: #808080;
   --accent-1-color: #3b3561;
   --accent-2-color: #ffa500;
-  /* --neutral-1-color: white; */
   --neutral-1-color: #ececec;
-  /* --neutral-1-color: #e8e8e8; */
   --neutral-2-color: #ffffff;
 }
 
@@ -55,16 +53,26 @@ svg path {
   border: 1px solid var(--primary-color);
 }
 
+html {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+
 body {
   /* transition: background-color 1s ease, color 1s ease; */
   background-color: var(--background-color);
   color: var(--primary-color);
-  margin-left: 40px;
+  /* margin-left: 40px; */
   /* background-image: url("cherrydub.svg");
   background-size: cover; */
   /* border: 1px solid green; */
   /* margin-right: 10px; */
   /* border: 3px solid pink; */
+}
+
+.main-sections {
+  margin-left: 40px;
+  max-width: 800px;
 }
 
 .App {
