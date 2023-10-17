@@ -56,7 +56,7 @@ svg path {
 }
 
 body {
-  transition: background-color 1s ease, color 1s ease;
+  /* transition: background-color 1s ease, color 1s ease; */
   background-color: var(--background-color);
   color: var(--primary-color);
   margin-left: 40px;
@@ -85,7 +85,8 @@ button {
 }
 
 button:hover {
-  background-color: var(--secondary-color);
+  color: var(--background-color);
+  /* background-color: var(--secondary-color); */
 }
 
 a,
