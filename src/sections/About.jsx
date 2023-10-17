@@ -116,10 +116,9 @@ export default function About() {
     <div className="section about" id="about">
       <h1 className="titles">About</h1>
       <div className="about-card">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quas in
-        repudiandae officiis soluta rem et! Reprehenderit, ratione at. Odio,
-        veniam vel doloribus consequuntur ipsam ullam obcaecati saepe quae
-        quaerat?
+        As a full stack developer, I approach each project exploring the perfect
+        tech stack for the task. After many trials and errors, I enjoy the tech
+        stack below the most:
         <div className="svg-container flex flex-wrap">
           <div className="frontend-stack flex">
             <div className="svg-wrapper">

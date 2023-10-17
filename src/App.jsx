@@ -13,7 +13,7 @@ import LeftBar from "./components/LeftBar";
 import TopLeft from "./components/TopLeft";
 
 function App() {
-  const [theme, setTheme] = useState("dark"); // Default to dark theme
+  const [theme, setTheme] = useState("light"); // Default to dark theme
   const [device, setDevice] = useState("mobile");
   const windoSize = useWindowSize();
 

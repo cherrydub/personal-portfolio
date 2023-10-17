@@ -89,8 +89,8 @@ export default function Projects() {
             "Fun nostalgic website to showcase CV, portfolio, and link to socials. Website has closable/draggable windows, very interactive"
           }
           imgSrc={"cherry-cherries.svg"}
-          githubLink={"https://cherrydub.com/"}
-          siteLink={"https://win98.cherrydub.com/"}
+          githubLink={"https://github.com/cherrydub/cherrydub98"}
+          siteLink={"https://98.cherrydub.com/"}
         />
         <ProjectCard
           badgeObj={badgeObj}
@@ -112,8 +112,39 @@ export default function Projects() {
             "This started off purely as a personal project to help me with building/scanning API's. Many times it is difficult to find the exact path needed to manipulate certain data within a JSON. This tool allows users to easily find a mapped out set of JSON keys, in a tree like structure."
           }
           imgSrc={"cherry-cherries.svg"}
-          githubLink={"https://cherrydub.com/"}
-          siteLink={"https://cherrydub.com/"}
+          githubLink={"https://github.com/cherrydub/jsonroute"}
+          siteLink={"https://json.cherrydub.com/"}
+        />
+        <ProjectCard
+          badgeObj={badgeObj}
+          title="World Wise"
+          stack={["html", "css", "javascript", "axios", "tailwind", "react"]}
+          description={
+            "Travel tracking website, highlighting all react tools/hooks."
+          }
+          imgSrc={"cherry-cherries.svg"}
+          githubLink={"https://github.com/cherrydub/worldwise"}
+          siteLink={"https://worldwise.cherrydub.com/"}
+        />
+        <ProjectCard
+          badgeObj={badgeObj}
+          title="Crypto Tracker"
+          stack={["html", "css", "javascript", "axios", "tailwind", "react"]}
+          description={"Crypto tracking website using CoinGecko live API data"}
+          imgSrc={"cherry-cherries.svg"}
+          githubLink={"https://github.com/cherrydub/crypto-app-vite"}
+          siteLink={"https://crypto1.cherrydub.com/"}
+        />
+        <ProjectCard
+          badgeObj={badgeObj}
+          title="Popcorn Time"
+          stack={["html", "css", "javascript", "axios", "tailwind", "react"]}
+          description={
+            "Early project I completed when learning to use LocalStorage for users, user ratings, useRef hooks and key bindings."
+          }
+          imgSrc={"cherry-cherries.svg"}
+          githubLink={"https://github.com/cherrydub/usepopcorn"}
+          siteLink={"https://popcorntime.cherrydub.com/"}
         />
       </div>
     </div>

@@ -37,7 +37,7 @@ export default function Contact({}) {
             <div className="contact-card-left flex justify-center">
               <a
                 href="mailto:chriscoding@icloud.com"
-                title="chriscoding@icloud.comk"
+                title="chriscoding@icloud.com"
               >
                 <i class="las la-envelope-square"></i>
               </a>

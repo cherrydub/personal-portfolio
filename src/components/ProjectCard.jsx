@@ -25,17 +25,24 @@ export default function ProjectCard({
       <div className="">
         {githubLink && (
           <a href={githubLink} target="_blank" rel="noopener noreferrer">
-            <i class="lab la-github-alt" title="GitHub"></i>
+            <i class="lab la-github" title="Github"></i>
           </a>
         )}
         {githubFe && (
-          <a href={githubFe} target="_blank" rel="noopener noreferrer">
-            <i class="lab la-github-alt" title="Frontend"></i>
+          <a
+            href={githubFe}
+            target="_blank"
+            rel="noopener noreferrer"
+            // className=" flex flex-row"
+          >
+            <i className="lab la-github-alt" title="Frontend"></i>
+
+            {/* <img src="https://img.shields.io/badge/Frontend-white" alt="" /> */}
           </a>
         )}
         {githubBe && (
           <a href={githubBe} target="_blank" rel="noopener noreferrer">
-            <i class="lab la-github-alt" title="Backend"></i>
+            <i class="lab la-github-square" title="Backend"></i>
           </a>
         )}
         {siteLink && (
