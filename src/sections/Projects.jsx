@@ -146,9 +146,9 @@ export default function Projects() {
           githubLink={"https://github.com/cherrydub/usepopcorn"}
           siteLink={"https://popcorntime.cherrydub.com/"}
         />
-        <div className="project-card self-stretch git-history">
+        {/* <div className="project-card self-stretch git-history">
           GitHub History
-        </div>
+        </div> */}
       </div>
     </div>
   );

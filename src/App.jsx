@@ -61,7 +61,7 @@ function App() {
               <i className="las la-mobile"></i>
             )}
           </span>
-          <TopLeft />
+          {/* <TopLeft /> */}
         </div>
       </Header>
       <LeftBar>
