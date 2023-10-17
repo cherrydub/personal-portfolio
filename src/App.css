@@ -249,6 +249,7 @@
 }
 
 #qr-div {
+  padding-top: 25px;
   opacity: 50%;
   @media (max-width: 600px) {
     display: none;

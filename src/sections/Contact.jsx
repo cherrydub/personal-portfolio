@@ -63,7 +63,7 @@ export default function Contact({}) {
                 id="qr-div"
                 className=" flex flex-col justify-center text-center items-center"
               >
-                Scan QR code to view on mobile:
+                Scan QR code to view on mobile
                 <img src="siteQR.png" alt="" width={"150px"} />
               </div>
             </div>
