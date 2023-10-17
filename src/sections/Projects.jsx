@@ -140,7 +140,7 @@ export default function Projects() {
           title="Popcorn Time"
           stack={["html", "css", "javascript", "axios", "tailwind", "react"]}
           description={
-            "Early project I completed when learning to use LocalStorage for users, user ratings, useRef hooks and key bindings. Early project I completed when learning to use LocalStorage for users, user ratings, useRef hooks and key bindings."
+            "Early project I completed when learning React hooks such as useState, useRef, useEffect. Also implementing LocalStorage for users to save user ratings, I found this very useful for future projects such as setting a theme preference (light/dark mode). This website fetches from a similar API to IMDB.com. It also has a small pause within the search instead of sending a fetch request for every letter typed out, allows the API not to be requested too often"
           }
           imgSrc={"cherry-cherries.svg"}
           githubLink={"https://github.com/cherrydub/usepopcorn"}

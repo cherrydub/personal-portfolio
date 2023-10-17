@@ -72,6 +72,14 @@
   display: block;
 }
 
+.starter-card {
+  width: 100%;
+  /* background-color: var(--background-color); */
+  padding: 5px;
+  border: 2px solid transparent;
+  text-align: justify;
+}
+
 .about-card {
   width: 100%;
   background-color: var(--neutral-1-color);
@@ -114,6 +122,7 @@
 .contact-card-left,
 .contact-card {
   border: 2px solid var(--background-color);
+  text-align: justify;
 }
 
 .project-card img {
