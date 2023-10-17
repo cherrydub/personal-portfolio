@@ -26,6 +26,8 @@ function App() {
   useEffect(() => {
     toast("Congrats on finding your new developer😎");
 
+    document.documentElement.setAttribute("data-theme", "light");
+
     // // Set the initial theme based on system preference
     // const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");
     // const setSystemTheme = (event) => {
