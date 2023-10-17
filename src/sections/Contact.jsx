@@ -34,29 +34,38 @@ export default function Contact({}) {
         <div>
           <section></section>
           <div className="contact-container flex flex-wrap text-center justify-center items-center">
-            <div className="contact-card-left flex justify-center self-stretch items-center">
-              <a
-                href="mailto:chriscoding@icloud.com"
-                title="chriscoding@icloud.com"
-              >
-                <i className="las la-envelope-square"></i>
-              </a>
+            <div className="contact-card-left flex flex-col justify-center self-stretch items-center">
+              <div className="">
+                <a
+                  href="mailto:chriscoding@icloud.com"
+                  title="chriscoding@icloud.com"
+                >
+                  <i className="las la-envelope-square"></i>
+                </a>
 
-              <a
-                href="https://www.linkedin.com/in/wisniewskichris/"
-                target="_blank"
-                title="LinkedIn"
-              >
-                <i className="lab la-linkedin"></i>
-              </a>
+                <a
+                  href="https://www.linkedin.com/in/wisniewskichris/"
+                  target="_blank"
+                  title="LinkedIn"
+                >
+                  <i className="lab la-linkedin"></i>
+                </a>
 
-              <a
-                href="https://github.com/cherrydub"
-                target="_blank"
-                title="GitHub"
+                <a
+                  href="https://github.com/cherrydub"
+                  target="_blank"
+                  title="GitHub"
+                >
+                  <i className="lab la-github-square"></i>
+                </a>
+              </div>
+              <div
+                id="qr-div"
+                className=" flex flex-col justify-center text-center items-center"
               >
-                <i className="lab la-github-square"></i>
-              </a>
+                Scan QR code to view on mobile:
+                <img src="siteQR.png" alt="" width={"150px"} />
+              </div>
             </div>
             <div
               className="contact-card flex flex-col justify-center items-center"
