@@ -108,9 +108,9 @@ export default function About() {
       backgroundColor: "var(--background-color)",
       fill: "var(--primary-color)",
     },
-    active: {
-      scale: 1.1,
-    },
+    // active: {
+    //   scale: 1.1,
+    // },
   };
   return (
     <div className="section about" id="about">

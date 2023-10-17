@@ -25,25 +25,25 @@
 }
 
 [data-theme="dark"] {
-  --background-color: black;
-  --primary-color: white;
-  --secondary-color: gray;
-  --accent-1-color: orange;
+  --background-color: #000000;
+  --primary-color: #ffffff;
+  --secondary-color: #808080;
+  --accent-1-color: #ffa500;
   --accent-2-color: #e2c2ff;
-  --neutral-1-color: rgb(17, 17, 17);
-  --neutral-2-color: white;
+  --neutral-1-color: #111111;
+  --neutral-2-color: #ffffff;
 }
 
 [data-theme="light"] {
-  --background-color: white;
-  --primary-color: black;
-  --secondary-color: gray;
+  --background-color: #ffffff;
+  --primary-color: #000000;
+  --secondary-color: #808080;
   --accent-1-color: #3b3561;
-  --accent-2-color: orange;
+  --accent-2-color: #ffa500;
   /* --neutral-1-color: white; */
   --neutral-1-color: #ececec;
   /* --neutral-1-color: #e8e8e8; */
-  --neutral-2-color: white;
+  --neutral-2-color: #ffffff;
 }
 
 #topleft {
@@ -102,6 +102,10 @@ a:hover,
 
 i {
   font-size: 1.5rem;
+}
+
+.about-card svg:hover {
+  fill: transparent;
 }
 
 input,
