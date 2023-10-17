@@ -97,7 +97,7 @@
 }
 
 .git-history {
-  background-image: url("cherrydub.svg");
+  background-image: url("https://raw.githubusercontent.com/cherrydub/personal-portfolio/main/public/cherrydub.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
