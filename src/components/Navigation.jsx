@@ -23,23 +23,27 @@ export default function Navigation({ device }) {
         >
           <a className="li-link" href="#about">
             <li>
-              About<i className="las la-id-card"></i>
+              About
+              {/* <i className="las la-id-card"></i> */}
             </li>
           </a>
           <a className="li-link" href="#projects">
             <li>
-              Projects<i className="las la-terminal"></i>
+              Projects
+              {/* <i className="las la-terminal"></i> */}
             </li>
           </a>
 
           <a className="li-link" href="#experience">
             <li>
-              Experience<i className="las la-briefcase"></i>
+              Experience
+              {/* <i className="las la-briefcase"></i> */}
             </li>
           </a>
           <a className="li-link" href="#contact">
             <li>
-              Contact <i className="las la-envelope"></i>
+              Contact
+              {/* <i className="las la-envelope"></i> */}
             </li>
           </a>
         </ul>
