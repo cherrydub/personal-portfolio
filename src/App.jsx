@@ -26,25 +26,25 @@ function App() {
   useEffect(() => {
     toast("Congrats on finding your new developer😎");
 
-    document.documentElement.setAttribute("data-theme", theme);
+    // document.documentElement.setAttribute("data-theme", theme);
 
-    // // Set the initial theme based on system preference
-    // const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");
-    // const setSystemTheme = (event) => {
-    //   const newTheme = event.matches ? "dark" : "light";
-    //   document.documentElement.setAttribute("data-theme", newTheme);
-    //   setTheme(newTheme);
-    // };
+    // Set the initial theme based on system preference
+    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+    const setSystemTheme = (event) => {
+      const newTheme = event.matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", newTheme);
+      setTheme(newTheme);
+    };
 
-    // setSystemTheme(systemPrefersDark); // Set initial theme
+    setSystemTheme(systemPrefersDark); // Set initial theme
 
-    // // Listen for changes in system preference and update the theme
-    // systemPrefersDark.addEventListener("change", setSystemTheme);
+    // Listen for changes in system preference and update the theme
+    systemPrefersDark.addEventListener("change", setSystemTheme);
 
-    // // Clean up event listener when the component unmounts
-    // return () => {
-    //   systemPrefersDark.removeEventListener("change", setSystemTheme);
-    // };
+    // Clean up event listener when the component unmounts
+    return () => {
+      systemPrefersDark.removeEventListener("change", setSystemTheme);
+    };
   }, []);
 
   useEffect(() => {
@@ -63,7 +63,7 @@ function App() {
               <i className="las la-mobile"></i>
             )}
           </span>
-          {/* <TopLeft /> */}
+          <TopLeft />
         </div>
       </Header>
       <LeftBar>

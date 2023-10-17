@@ -204,6 +204,7 @@
 
 .device i {
   font-size: 1rem;
+  margin-left: -3px;
 }
 
 .navigation {
