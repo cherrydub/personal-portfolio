@@ -11,25 +11,11 @@ import Socials from "./components/Socials";
 import Starter from "./sections/Starter";
 import LeftBar from "./components/LeftBar";
 import TopLeft from "./components/TopLeft";
-import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
   const [theme, setTheme] = useState("light"); // Default to dark theme
   const [device, setDevice] = useState("mobile");
   const windoSize = useWindowSize();
-  const [componentsActive, setComponentsActive] = useState(false);
-
-  useEffect(() => {
-    // Trigger the activation after some delay
-    setTimeout(() => setComponentsActive(true), 1000);
-  }, []);
-
-  const slideInVariants = {
-    hidden: { x: -100, opacity: 0 },
-    visible: { x: 0, opacity: 1 },
-  };
-
-  // const transition = { duration: 1, delay: 0.5 }; // 1-second delay between components
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
@@ -92,75 +78,11 @@ function App() {
         </button>
       </LeftBar>
       <div className="main-sections">
-        <AnimatePresence>
-          {componentsActive && (
-            <motion.div
-              key="starter"
-              variants={slideInVariants}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
-              <Starter />
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        <AnimatePresence>
-          {componentsActive && (
-            <motion.div
-              key="about"
-              variants={slideInVariants}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
-              <About />
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        <AnimatePresence>
-          {componentsActive && (
-            <motion.div
-              key="projects"
-              variants={slideInVariants}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
-              <Projects />
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        <AnimatePresence>
-          {componentsActive && (
-            <motion.div
-              key="experience"
-              variants={slideInVariants}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 0.5, delay: 0.8 }}
-            >
-              <Experience />
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        <AnimatePresence>
-          {componentsActive && (
-            <motion.div
-              key="contact"
-              variants={slideInVariants}
-              initial="hidden"
-              animate="visible"
-              transition={{ duration: 0.5, delay: 1 }}
-            >
-              <Contact />
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <Starter />
+        <About />
+        <Projects />
+        <Experience />
+        <Contact />
       </div>
     </div>
   );
