@@ -38,25 +38,6 @@ export default function NavigationMenu({ toggleMenu }) {
             </a>
           </li>
         </ul>
-        {/* <div
-          style={{
-            backgroundColor: "orange",
-            position: "fixed",
-            bottom: "0",
-            right: "0",
-            fontSize: "1rem",
-            width: "50vw",
-          }}
-        >
-          chriscoding@icloud.com
-        </div> */}
-        <div
-          className="fixed bottom-0 git-history flex items-end text-right"
-          style={{ height: "150px", width: "50%" }}
-        >
-          .git
-          {/* <img src="cherrydub.svg" alt="" width={"auto"} /> */}
-        </div>
       </div>
     </div>
   );
