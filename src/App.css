@@ -96,6 +96,18 @@
   }
 }
 
+.git-history {
+  background-image: url("cherrydub.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (max-width: 600px) {
+    display: none;
+  }
+  font-weight: bold;
+  /* Other CSS properties for styling .git-history as needed */
+}
+
 .about-card,
 .experience-card,
 .project-card,

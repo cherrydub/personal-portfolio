@@ -2,7 +2,8 @@ import React from "react";
 
 export default function Starter() {
   return (
-    <div>
+    <div className="starter">
+      {/* <img src="cherrydub.svg" alt="" width={"200px"} /> */}
       <img src="cherry-cherries.svg" alt="" width={"50px"} />
       <i class="las la-terminal"></i>
       As an experienced IT consultant with a client-centered approach, I am

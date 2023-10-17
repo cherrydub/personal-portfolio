@@ -140,12 +140,15 @@ export default function Projects() {
           title="Popcorn Time"
           stack={["html", "css", "javascript", "axios", "tailwind", "react"]}
           description={
-            "Early project I completed when learning to use LocalStorage for users, user ratings, useRef hooks and key bindings."
+            "Early project I completed when learning to use LocalStorage for users, user ratings, useRef hooks and key bindings. Early project I completed when learning to use LocalStorage for users, user ratings, useRef hooks and key bindings."
           }
           imgSrc={"cherry-cherries.svg"}
           githubLink={"https://github.com/cherrydub/usepopcorn"}
           siteLink={"https://popcorntime.cherrydub.com/"}
         />
+        <div className="project-card self-stretch git-history">
+          GitHub History
+        </div>
       </div>
     </div>
   );

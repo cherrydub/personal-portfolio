@@ -34,7 +34,7 @@ export default function Contact({}) {
         <div>
           <section></section>
           <div className="contact-container flex flex-wrap text-center justify-center items-center">
-            <div className="contact-card-left flex justify-center">
+            <div className="contact-card-left flex justify-center self-stretch items-center">
               <a
                 href="mailto:chriscoding@icloud.com"
                 title="chriscoding@icloud.com"

@@ -5,7 +5,7 @@ export default function NavigationMenu({ toggleMenu }) {
     <div className="nav-menu flex">
       <div className="blur-div" style={{ width: "50%" }}></div>
       <div
-        className="second-blur-div"
+        className=""
         style={{
           width: "50%",
           height: "100vh",
@@ -50,6 +50,13 @@ export default function NavigationMenu({ toggleMenu }) {
         >
           chriscoding@icloud.com
         </div> */}
+        <div
+          className="fixed bottom-0 git-history flex items-end text-right"
+          style={{ height: "150px", width: "50%" }}
+        >
+          .git
+          {/* <img src="cherrydub.svg" alt="" width={"auto"} /> */}
+        </div>
       </div>
     </div>
   );
