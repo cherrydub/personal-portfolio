@@ -39,7 +39,7 @@ export default function Contact({}) {
                 href="mailto:chriscoding@icloud.com"
                 title="chriscoding@icloud.com"
               >
-                <i class="las la-envelope-square"></i>
+                <i className="las la-envelope-square"></i>
               </a>
 
               <a
@@ -47,7 +47,7 @@ export default function Contact({}) {
                 target="_blank"
                 title="LinkedIn"
               >
-                <i class="lab la-linkedin"></i>
+                <i className="lab la-linkedin"></i>
               </a>
 
               <a
@@ -55,7 +55,7 @@ export default function Contact({}) {
                 target="_blank"
                 title="GitHub"
               >
-                <i class="lab la-github-square"></i>
+                <i className="lab la-github-square"></i>
               </a>
             </div>
             <div

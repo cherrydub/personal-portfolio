@@ -5,7 +5,7 @@ export default function Starter() {
     <div className="starter starter-card">
       {/* <img src="cherrydub.svg" alt="" width={"200px"} /> */}
       <img src="cherry-cherries.svg" alt="" width={"50px"} />
-      <i class="las la-terminal"></i>
+      <i className="las la-terminal"></i>
       As an experienced IT consultant with a client-centered approach, I am
       highly enthusiastic about programming and dedicated to delivering
       exceptional results. Through my previous work experience and personal

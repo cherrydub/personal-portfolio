@@ -25,7 +25,7 @@ export default function ProjectCard({
       <div className="">
         {githubLink && (
           <a href={githubLink} target="_blank" rel="noopener noreferrer">
-            <i class="lab la-github" title="Github"></i>
+            <i className="lab la-github" title="Github"></i>
           </a>
         )}
         {githubFe && (
@@ -42,19 +42,19 @@ export default function ProjectCard({
         )}
         {githubBe && (
           <a href={githubBe} target="_blank" rel="noopener noreferrer">
-            <i class="lab la-github-square" title="Backend"></i>
+            <i className="lab la-github-square" title="Backend"></i>
           </a>
         )}
         {siteLink && (
           <a href={siteLink} target="_blank" rel="noopener noreferrer">
-            <i class="lab la-internet-explorer" title="Website"></i>
-            {/* <i class="las la-external-link-alt" title="Website"></i> */}
+            <i className="lab la-internet-explorer" title="Website"></i>
+            {/* <i className="las la-external-link-alt" title="Website"></i> */}
           </a>
         )}
 
         {youtubeLink && (
           <a href={youtubeLink} target="_blank" rel="noopener noreferrer">
-            <i class="lab la-youtube" title="YouTube"></i>
+            <i className="lab la-youtube" title="YouTube"></i>
           </a>
         )}
       </div>

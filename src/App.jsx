@@ -19,14 +19,14 @@ function App() {
 
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
-    document.documentElement.setAttribute("data-theme", newTheme);
     setTheme(newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
   };
 
   useEffect(() => {
     toast("Congrats on finding your new developer😎");
 
-    document.documentElement.setAttribute("data-theme", "light");
+    document.documentElement.setAttribute("data-theme", theme);
 
     // // Set the initial theme based on system preference
     // const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)");

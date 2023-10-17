@@ -23,23 +23,23 @@ export default function Navigation({ device }) {
         >
           <a className="li-link" href="#about">
             <li>
-              About<i class="las la-id-card"></i>
+              About<i className="las la-id-card"></i>
             </li>
           </a>
           <a className="li-link" href="#projects">
             <li>
-              Projects<i class="las la-terminal"></i>
+              Projects<i className="las la-terminal"></i>
             </li>
           </a>
 
           <a className="li-link" href="#experience">
             <li>
-              Experience<i class="las la-briefcase"></i>
+              Experience<i className="las la-briefcase"></i>
             </li>
           </a>
           <a className="li-link" href="#contact">
             <li>
-              Contact <i class="las la-envelope"></i>
+              Contact <i className="las la-envelope"></i>
             </li>
           </a>
         </ul>
@@ -48,7 +48,7 @@ export default function Navigation({ device }) {
           {/* <button className="nav-button"> */}
           {menuOpen ? (
             <i
-              class="las la-caret-square-down pr-2 pl-2 pt-1 hover:cursor-pointer"
+              className="las la-caret-square-down pr-2 pl-2 pt-1 hover:cursor-pointer"
               style={
                 {
                   // backgroundColor: "var(--neutral-2-color)",
@@ -72,7 +72,7 @@ export default function Navigation({ device }) {
             style={{ backgroundColor: "var(--secondary-color)" }}
           ></i>
           <i
-            class="las la-caret-square-left"
+            className="las la-caret-square-left"
             style={{ backgroundColor: "var(--secondary-color)" }}
           ></i> */}
           {/* </button> */}
