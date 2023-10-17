@@ -28,7 +28,7 @@
   --background-color: #000000;
   --primary-color: #ffffff;
   --secondary-color: #808080;
-  --accent-1-color: #ffa500;
+  --accent-1-color: #bb93e0;
   --accent-2-color: #e2c2ff;
   --neutral-1-color: #111111;
   --neutral-2-color: #ffffff;
@@ -38,7 +38,7 @@
   --background-color: #ffffff;
   --primary-color: #000000;
   --secondary-color: #808080;
-  --accent-1-color: #3b3561;
+  --accent-1-color: #ffc458;
   --accent-2-color: #ffa500;
   --neutral-1-color: #ececec;
   --neutral-2-color: #ffffff;
@@ -93,7 +93,21 @@ button {
 }
 
 button:hover {
+  color: var(--accent-2-color);
+  /* background-color: var(--secondary-color); */
+}
+
+#contact-button {
+  background-color: var(--secondary-color);
+  /* opacity: 50%; */
+  /* background-color: var(--secondary-color); */
+}
+
+#contact-button:hover {
+  opacity: 100%;
+  background-color: var(--accent-2-color);
   color: var(--background-color);
+  /* background-color: pink; */
   /* background-color: var(--secondary-color); */
 }
 

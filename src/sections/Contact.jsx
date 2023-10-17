@@ -126,7 +126,7 @@ export default function Contact({}) {
                           width: "100px",
                           marginTop: "10px",
                           height: "25px",
-                          backgroundColor: "var(--background-color)",
+                          // backgroundColor: "var(--background-color)",
                           border: "none",
                           cursor: "pointer", // Add this line to change the cursor on hover
                         }}
