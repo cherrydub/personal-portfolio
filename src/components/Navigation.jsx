@@ -28,40 +28,44 @@ export default function Navigation({ device }) {
         <ul className="flex flex-row flex-wrap ul-li">
           {/* Use Framer Motion to animate list items */}
           <motion.li
-            className="li-link"
             variants={itemVariants}
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <a href="#about">About</a>
+            <a className="li-link" href="#about">
+              About
+            </a>
           </motion.li>
           <motion.li
-            className="li-link"
             variants={itemVariants}
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <a href="#projects">Projects</a>
+            <a className="li-link" href="#projects">
+              Projects
+            </a>
           </motion.li>
           <motion.li
             variants={itemVariants}
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="li-link"
           >
-            <a href="#experience">Experience</a>
+            <a className="li-link" href="#experience">
+              Experience
+            </a>
           </motion.li>
           <motion.li
-            className="li-link"
             variants={itemVariants}
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <a href="#contact">Contact</a>
+            <a className="li-link" href="#contact">
+              Contact
+            </a>
           </motion.li>
         </ul>
       ) : (

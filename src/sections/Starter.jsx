@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Starter() {
   return (
-    <div className="starter starter-card">
+    <div className="starter starter-card" id="starter">
       {/* <img src="cherrydub.svg" alt="" width={"200px"} /> */}
       <img src="cherry-cherries.svg" alt="" width={"50px"} />
       <i className="las la-terminal"></i>

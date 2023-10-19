@@ -66,7 +66,10 @@ function App() {
   }, [windoSize]);
 
   return (
-    <div id={theme} className="App">
+    <div
+      //  id={theme}
+      className="App"
+    >
       <Toaster richColors />
       <Header id="top" device={device}>
         <div className="flex pt-2 pl-3">
