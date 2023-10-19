@@ -22,10 +22,10 @@ export default function Starter() {
         </span>
       </div> */}
       <div className="starter-info">
-        <i className="las la-terminal"></i> Web Developer based in the vibrant
-        city of London, UK, on a quest to kickstart my career in web
-        development. I recently made the exciting transition from the IT field,
-        and now I'm eagerly seeking my first role as a web developer.
+        <i className="las la-terminal"></i> Web Developer on a quest to
+        kickstart my career in web development. I recently made the exciting
+        transition from the IT field, and now I'm eagerly seeking my first role
+        as a web developer.
         <br />
         <i class="las la-globe-europe"></i> I'm open to opportunities that offer
         flexibility, whether it's in-office, a hybrid setup, or the chance to
