@@ -114,7 +114,7 @@ export default function About() {
   };
   return (
     <div className="section about" id="about">
-      <h1 className="titles">About</h1>
+      <h1 className="titles">Stack</h1>
       <div className="about-card">
         As a full stack developer, I approach each project exploring the perfect
         tech stack for the task. After many trials and errors, I enjoy the tech
