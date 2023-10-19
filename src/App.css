@@ -21,6 +21,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 } */
 
+.starter-info i {
+  color: var(--secondary-color);
+}
+
 .starter {
   font-size: 1rem;
   @media (max-width: 600px) {
