@@ -248,6 +248,11 @@
   height: 35px;
 }
 
+.ul-li {
+  font-size: 1rem;
+  font-family: "Roboto Mono", "DejaVu Sans Mono", "Consolas", monospace;
+}
+
 .navigation button:hover {
   background-color: var(--background-color);
   color: var(--primary-color);
