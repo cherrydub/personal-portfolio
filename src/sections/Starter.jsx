@@ -4,8 +4,13 @@ export default function Starter() {
   return (
     <div className="starter starter-card" id="starter">
       {/* <img src="cherrydub.svg" alt="" width={"200px"} /> */}
-      <img src="cherry-cherries.svg" alt="" width={"50px"} />
-      <i className="las la-terminal"></i>
+      <div className="flex">
+        <img src="cherry-cherries.svg" alt="" width={"50px"} />
+        <span className="self-end pl-2 font-bold">
+          <i className="las la-terminal"></i>
+          <span className="name-title">Chris Wisniewski, London UK</span>
+        </span>
+      </div>
       As an experienced IT consultant with a client-centered approach, I am
       highly enthusiastic about programming and dedicated to delivering
       exceptional results. Through my previous work experience and personal
