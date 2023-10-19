@@ -38,7 +38,7 @@ function App() {
   };
 
   useEffect(() => {
-    toast("Congrats on finding your new developer😎");
+    toast("Hello everyone 😎");
 
     // document.documentElement.setAttribute("data-theme", theme);
 
