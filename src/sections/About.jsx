@@ -108,13 +108,13 @@ export default function About() {
       backgroundColor: "var(--background-color)",
       fill: "var(--primary-color)",
     },
-    // active: {
-    //   scale: 1.1,
-    // },
+    active: {
+      scale: 1.1,
+    },
   };
   return (
     <div className="section about" id="about">
-      <h1 className="titles">Stack</h1>
+      <h1 className="titles">{"_About"}</h1>
       <div className="about-card">
         As a full stack developer, I approach each project exploring the perfect
         tech stack for the task. After many trials and errors, I enjoy the tech

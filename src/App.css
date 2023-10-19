@@ -2,7 +2,7 @@
 }
 
 .section {
-  margin-bottom: 100px;
+  margin-bottom: 75px;
   font-size: 1rem;
   @media (max-width: 600px) {
     font-size: 0.7rem;
@@ -13,6 +13,7 @@
   font-weight: 900;
   font-size: 1.3rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto Mono", "DejaVu Sans Mono", "Consolas", monospace;
 }
 /* .name-title {
   color: var(--accent-2-color);
@@ -198,13 +199,20 @@
   z-index: 99;
 }
 
+.starter-more {
+  /* display */
+}
+
 .titles {
   color: var(--accent-2-color);
   font-weight: 900;
   font-size: 1.3rem;
-  text-align: right;
+  text-align: left;
+  /* text-align: right; */
   padding-right: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: "Roboto Mono", "DejaVu Sans Mono", "Consolas", monospace;
+  /* font-family: "Times New Roman", Times, serif; */
 }
 
 .socials {
@@ -316,13 +324,13 @@
 
 .contact {
   margin-bottom: 0px;
+  padding-bottom: 0px;
   /* padding-bottom: 25px; */
 }
 
 .contact-card {
   /* margin: 5px; */
   width: 50%;
-
   background-color: var(--neutral-1-color);
   padding: 5px;
   @media (max-width: 600px) {
@@ -356,6 +364,32 @@
     flex-direction: row;
   }
 }
+
+.about,
+.projects,
+.experience,
+.contact {
+  padding-top: 35px;
+}
+
+.contact-container {
+  background-color: var(--neutral-1-color);
+
+  /* height: 90vh; */
+}
+
+.contact-card-left {
+  /* height: 100vh; */
+}
+
+.contact-card {
+  /* height: 100vh; */
+  height: 50vh;
+}
+
+/* .contact {
+  height: 100vh;
+} */
 
 @keyframes logo-spin {
   from {

@@ -29,12 +29,11 @@ export default function Contact({}) {
 
   return (
     <>
-      <div className="contact section " id="contact">
-        <h1 className="titles">Contact</h1>
-        <div>
-          <section></section>
-          <div className="contact-container flex flex-wrap text-center justify-center items-center">
-            <div className="contact-card-left flex flex-col justify-center self-stretch items-center">
+      <div className="contact section" id="contact">
+        <h1 className="titles justify-start">{"//Contact"}</h1>
+        <div className="">
+          <div className="contact-container flex flex-wrap text-center">
+            <div className="contact-card-left flex flex-col justify-start items-center flex-shrink">
               <div className="">
                 <a
                   href="mailto:chriscoding@icloud.com"
@@ -68,8 +67,8 @@ export default function Contact({}) {
               </div>
             </div>
             <div
-              className="contact-card flex flex-col justify-center items-center"
-              style={{ height: "420px" }}
+              className="contact-card flex flex-col justify-start items-center"
+              // style={{ height: "420px" }}
             >
               {!submitted ? (
                 <>

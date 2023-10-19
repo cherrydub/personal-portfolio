@@ -4,7 +4,7 @@ import ExperienceCard from "../components/ExperienceCard";
 export default function Experience() {
   return (
     <div className="experience section" id="experience">
-      <h1 className="titles">Experience</h1>
+      <h1 className="titles">{"{Experience}"}</h1>
       <div className=" flex items-start flex-wrap">
         <ExperienceCard
           jobURL={"https://northcoders.com/"}

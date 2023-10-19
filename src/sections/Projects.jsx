@@ -57,8 +57,12 @@ const badgeObj = {
 
 export default function Projects() {
   return (
-    <div className="projects section" id="projects">
-      <h1 className="titles">Projects</h1>
+    <div
+      className="projects section"
+      id="projects"
+      // style={{ paddingTop: "35px" }}
+    >
+      <h1 className="titles">{"[Projects]"}</h1>
       <div className="flex items-start flex-wrap">
         <ProjectCard
           badgeObj={badgeObj}
