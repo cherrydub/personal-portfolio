@@ -110,13 +110,27 @@
 
 .about-card {
   width: 100%;
-  background-color: var(--neutral-1-color);
+  /* background-color: var(--neutral-1-color); */
+  background: linear-gradient(
+    to top,
+    var(--neutral-2-color),
+    var(--neutral-1-color) 100%
+  );
+  border-radius: 8px;
+  /* border-radius: 8px; */
+  /* border: 1px solid black; */
   padding: 5px;
 }
 
 .project-card {
   width: 50%;
-  background-color: var(--neutral-1-color);
+  /* background-color: var(--neutral-1-color); */
+  background: linear-gradient(
+    to top,
+    var(--neutral-2-color),
+    var(--neutral-1-color) 100%
+  );
+  border-radius: 8px;
   padding: 5px;
   @media (max-width: 600px) {
     width: 100%;
@@ -125,8 +139,14 @@
 
 .experience-card {
   width: 50%;
-  background-color: var(--neutral-1-color);
+  /* background-color: var(--neutral-1-color); */
+  background: linear-gradient(
+    to top,
+    var(--neutral-2-color),
+    var(--neutral-1-color) 100%
+  );
   padding: 5px;
+  border-radius: 8px;
   @media (max-width: 600px) {
     width: 100%;
   }
@@ -331,8 +351,14 @@
 .contact-card {
   /* margin: 5px; */
   width: 50%;
-  background-color: var(--neutral-1-color);
+  /* background-color: var(--neutral-1-color); */
+  background: linear-gradient(
+    to top,
+    var(--neutral-2-color),
+    var(--neutral-1-color) 100%
+  );
   padding: 5px;
+  border-radius: 8px;
   @media (max-width: 600px) {
     width: 100%;
   }

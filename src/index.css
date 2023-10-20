@@ -31,7 +31,7 @@
   --accent-1-color: #bb93e0;
   --accent-2-color: #e2c2ff;
   --neutral-1-color: #111111;
-  --neutral-2-color: #ffffff;
+  --neutral-2-color: #050505;
 }
 
 [data-theme="light"] {
@@ -41,7 +41,7 @@
   --accent-1-color: #ffc458;
   --accent-2-color: #ffa500;
   --neutral-1-color: #ececec;
-  --neutral-2-color: #ffffff;
+  --neutral-2-color: #fefefe;
 }
 
 #topleft {
