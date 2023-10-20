@@ -3,7 +3,7 @@
 
 .section {
   margin-bottom: 75px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   @media (max-width: 600px) {
     font-size: 0.7rem;
   }
@@ -27,7 +27,7 @@
 }
 
 .starter {
-  font-size: 1rem;
+  font-size: 0.9rem;
   @media (max-width: 600px) {
     font-size: 0.7rem;
   }
