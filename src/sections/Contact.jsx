@@ -114,10 +114,7 @@ export default function Contact({}) {
                     ></textarea>
 
                     <div className="flex mt-1">
-                      <a
-                        className="text-blue-700"
-                        href="mailto:chriscoding@icloud.com"
-                      ></a>
+                      <a href="mailto:chriscoding@icloud.com"></a>
 
                       <button
                         id="contact-button"

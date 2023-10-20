@@ -399,7 +399,7 @@
 }
 
 .contact-container {
-  background-color: var(--neutral-1-color);
+  /* background-color: var(--neutral-1-color); */
 
   /* height: 90vh; */
 }
