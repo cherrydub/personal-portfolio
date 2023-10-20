@@ -74,6 +74,9 @@ body {
   margin-left: 40px;
   margin-right: 20px;
   max-width: 800px;
+  @media (max-width: 600px) {
+    margin-right: 10px;
+  }
 }
 
 .App {
