@@ -56,6 +56,7 @@ svg path {
 html {
   background-color: var(--background-color);
   color: var(--primary-color);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -74,7 +75,7 @@ body {
   margin-left: 40px;
   margin-right: 20px;
   max-width: 800px;
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
     margin-right: 10px;
   }
 }
