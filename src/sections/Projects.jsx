@@ -110,10 +110,10 @@ export default function Projects() {
         />
         <ProjectCard
           badgeObj={badgeObj}
-          title="JSON Formatter"
-          stack={["html", "css", "javascript", "react"]}
+          title="World Wise"
+          stack={["html", "css", "javascript", "react", "tailwind"]}
           description={
-            "This started off purely as a personal project to help me with building/scanning API's. Many times it is difficult to find the exact path needed to manipulate certain data within a JSON. This tool allows users to easily find a mapped out set of JSON keys, in a tree like structure."
+            "Website with an interactive map+form that will allow users to track their trips along with notes about the city"
           }
           imgSrc={"cherry-cherries.svg"}
           githubLink={"https://github.com/cherrydub/jsonroute"}
@@ -121,10 +121,10 @@ export default function Projects() {
         />
         <ProjectCard
           badgeObj={badgeObj}
-          title="World Wise"
-          stack={["html", "css", "javascript", "axios", "tailwind", "react"]}
+          title="JSON Formatter"
+          stack={["html", "css", "javascript", "react"]}
           description={
-            "Travel tracking website, highlighting all react tools/hooks."
+            "This started off purely as a personal project to help me with building/scanning API's. Many times it is difficult to find the exact path needed to manipulate certain data within a JSON. This tool allows users to easily find a mapped out set of JSON keys, in a tree like structure."
           }
           imgSrc={"cherry-cherries.svg"}
           githubLink={"https://github.com/cherrydub/worldwise"}
@@ -139,7 +139,7 @@ export default function Projects() {
           githubLink={"https://github.com/cherrydub/crypto-app-vite"}
           siteLink={"https://crypto1.cherrydub.com/"}
         />
-        <ProjectCard
+        {/* <ProjectCard
           badgeObj={badgeObj}
           title="Popcorn Time"
           stack={["html", "css", "javascript", "axios", "tailwind", "react"]}
@@ -149,7 +149,7 @@ export default function Projects() {
           imgSrc={"cherry-cherries.svg"}
           githubLink={"https://github.com/cherrydub/usepopcorn"}
           siteLink={"https://popcorntime.cherrydub.com/"}
-        />
+        /> */}
         {/* <div className="project-card self-stretch git-history">
           GitHub History
         </div> */}
