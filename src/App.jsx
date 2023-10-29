@@ -25,8 +25,10 @@ function App() {
   }, []);
 
   const slideInVariants = {
-    hidden: { x: -100, opacity: 0 },
-    visible: { x: 0, opacity: 1 },
+    // hidden: { x: -100, opacity: 0 },
+    // visible: { x: 0, opacity: 1 },
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
   };
 
   // const transition = { duration: 1, delay: 0.5 }; // 1-second delay between components
@@ -102,7 +104,7 @@ function App() {
               variants={slideInVariants}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 0.5, delay: 0.2 }}
+              transition={{ duration: 0.5, delay: 1.2 }}
             >
               <Starter />
             </motion.div>
@@ -116,7 +118,7 @@ function App() {
               variants={slideInVariants}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 1.4 }}
             >
               <About />
             </motion.div>
@@ -130,7 +132,7 @@ function App() {
               variants={slideInVariants}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 0.5, delay: 0.6 }}
+              transition={{ duration: 0.5, delay: 1.6 }}
             >
               <Projects />
             </motion.div>
@@ -144,7 +146,7 @@ function App() {
               variants={slideInVariants}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 0.5, delay: 0.8 }}
+              transition={{ duration: 0.5, delay: 1.8 }}
             >
               <Experience />
             </motion.div>
@@ -158,7 +160,7 @@ function App() {
               variants={slideInVariants}
               initial="hidden"
               animate="visible"
-              transition={{ duration: 0.5, delay: 1 }}
+              transition={{ duration: 0.5, delay: 2 }}
             >
               <Contact />
             </motion.div>

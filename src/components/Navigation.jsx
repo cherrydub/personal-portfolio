@@ -18,8 +18,8 @@ export default function Navigation({ device }) {
 
   // Define the animation variants
   const itemVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
+    hidden: { y: -100, opacity: 1 },
+    visible: { y: 0, opacity: 1 },
   };
 
   return (
