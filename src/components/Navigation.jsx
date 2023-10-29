@@ -73,7 +73,13 @@ export default function Navigation({ device }) {
           {menuOpen ? (
             <i className="las la-caret-square-down pr-2 pl-2 pt-1 hover:cursor-pointer"></i>
           ) : (
-            <i className="las la-caret-square-left pr-2 pl-2 pt-1 hover:cursor-pointer"></i>
+            <motion.i
+              variants={itemVariants}
+              initial="hidden"
+              animate="visible"
+              transition={{ duration: 0.75, delay: 0 }}
+              className="las la-caret-square-left pr-2 pl-2 pt-1 hover:cursor-pointer"
+            ></motion.i>
           )}
 
           {menuOpen && <NavigationMenu toggleMenu={toggleMenu} />}
