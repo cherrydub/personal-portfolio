@@ -117,7 +117,7 @@ export default function Projects() {
           }
           imgSrc={"cherry-cherries.svg"}
           githubLink={"https://github.com/cherrydub/jsonroute"}
-          siteLink={"https://json.cherrydub.com/"}
+          siteLink={"https://worldwise.cherrydub.com/"}
         />
         <ProjectCard
           badgeObj={badgeObj}
@@ -128,7 +128,7 @@ export default function Projects() {
           }
           imgSrc={"cherry-cherries.svg"}
           githubLink={"https://github.com/cherrydub/worldwise"}
-          siteLink={"https://worldwise.cherrydub.com/"}
+          siteLink={"https://json.cherrydub.com/"}
         />
         <ProjectCard
           badgeObj={badgeObj}
