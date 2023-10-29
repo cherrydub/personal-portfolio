@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { toast } from "sonner"; // Import toast from "sonner"
+import { SpinningCircles } from "react-loading-icons";
 
 const formID = import.meta.env.VITE_FORM_KEY;
 
@@ -8,21 +9,25 @@ export default function Contact({}) {
   const [state, handleSubmit] = useForm(formID);
   const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [submitButtonText, setSubmitButtonText] = useState("Submit");
 
   useEffect(() => {
     if (state.submitting) {
       toast("Sending...");
+      setSubmitButtonText(<SpinningCircles width={"15px"} />);
     } else {
       if (state.succeeded) {
         toast.success("Email Sent!");
         setSubmitted(true);
         setTimeout(() => {
           setSubmitted(false);
+          setSubmitButtonText("Submit");
           setName("");
         }, 10000);
       }
       if (state.errors?.length ?? 0 > 0) {
         toast.error("Email Failed!");
+        setSubmitButtonText("Submit");
       }
     }
   }, [state.submitting]);
@@ -129,7 +134,7 @@ export default function Contact({}) {
                         type="submit"
                         className="flex items-center justify-center ml-auto"
                       >
-                        Submit
+                        {submitButtonText}
                       </button>
                     </div>
 
