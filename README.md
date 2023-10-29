@@ -1,6 +1,6 @@
 # Portfolio Project
 
-This portfolio project is built with React, Vite, and Tailwind CSS, and it incorporates several libraries and resources for icons, tech stack visualization, loading spinners, and animations.
+This portfolio project is built with React, Vite, and Tailwind CSS, and it incorporates several libraries and resources for icons, tech stack visualization, loading spinners, animations, and styled notifications.
 
 ## Tech Stack
 
@@ -12,7 +12,7 @@ This portfolio project is built with React, Vite, and Tailwind CSS, and it incor
 
 For icons, this project utilizes the following libraries:
 
-- [React Icons](https://react-icons.github.io/react-icons/): A comprehensive library of popular icons for React applications.
+- [React Icons](https://react-icons.github.io/react-icons): A comprehensive library of popular icons for React applications.
 - [Line Awesome](https://icons8.com/line-awesome): A collection of stylish and customizable line icons.
 - [Tech Stack Icons](https://simpleicons.org/): A collection of icons representing various technologies and brands.
 
@@ -25,6 +25,10 @@ Loading spinners in this project are implemented using:
 ## Animation
 
 To add fluid animations to the project, [Framer Motion](https://www.framer.com/motion/) is used. Framer Motion provides a simple and powerful way to create animations in React applications.
+
+## Styled Notifications
+
+For stylish notifications, this project integrates [Sonner](https://sonner.emilkowal.ski/). Sonner provides a user-friendly and customizable solution for displaying notifications.
 
 ## Getting Started
 
