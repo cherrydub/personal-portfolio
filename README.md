@@ -6,9 +6,8 @@ REACT + VITE + tailwindcss
 
 -icons
 react icons: https://react-icons.github.io/react-icons/
-for light icons: https://icons8.com/
+line awesome: https://icons8.com/line-awesome
+tech stack: https://simpleicons.org/
 
 -animation
 framer motion: https://www.framer.com/motion/
-
-![Location](https://img.shields.io/badge/London,%20UK-green?style=for-the-badge)
