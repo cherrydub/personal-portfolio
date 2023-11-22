@@ -74,7 +74,7 @@ export default function Socials() {
           </motion.svg>
         </a>
 
-        <a href="https://raw.githubusercontent.com/cherrydub/cherrydub/main/Chris_Wisniewski_CV.pdf">
+        <a href="https://raw.githubusercontent.com/cherrydub/cherrydub/main/public/Chris_Wisniewski_CV.pdf">
           <motion.svg
             whileHover="hover" // Use the hover variant for CSS3
             whileTap="active"
