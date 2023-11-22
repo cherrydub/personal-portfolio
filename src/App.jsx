@@ -14,7 +14,7 @@ import TopLeft from "./components/TopLeft";
 import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
-  const [theme, setTheme] = useState("light"); // Default to dark theme
+  const [theme, setTheme] = useState("light"); // Default to light theme
   const [device, setDevice] = useState("mobile");
   const windoSize = useWindowSize();
   const [componentsActive, setComponentsActive] = useState(false);
