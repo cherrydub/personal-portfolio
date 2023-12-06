@@ -127,7 +127,7 @@ export default function Projects() {
             "This started off purely as a personal project to help me with building/scanning API's. Many times it is difficult to find the exact path needed to manipulate certain data within a JSON. This tool allows users to easily find a mapped out set of JSON keys, in a tree like structure."
           }
           imgSrc={"cherry-cherries.svg"}
-          githubLink={"https://github.com/cherrydub/worldwise"}
+          githubLink={"https://github.com/cherrydub/jsonformatter"}
           siteLink={"https://json.cherrydub.com/"}
         />
         <ProjectCard
