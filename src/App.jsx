@@ -65,6 +65,7 @@ function App() {
 
   useEffect(() => {
     setDevice(windoSize.width > 600 ? "comp" : "mobile");
+    console.log(windoSize);
   }, [windoSize]);
 
   return (

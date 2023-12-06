@@ -110,14 +110,14 @@ export default function Projects() {
         />
         <ProjectCard
           badgeObj={badgeObj}
-          title="World Wise"
+          title="Pizza Shop"
           stack={["html", "css", "javascript", "react", "tailwind"]}
           description={
-            "Website with an interactive map+form that will allow users to track their trips along with notes about the city"
+            "Pizza shop that pulls menu from API, UI state management with Redux. Geo-positioning during final checkout. Thunks in Redux used for async functions"
           }
           imgSrc={"cherry-cherries.svg"}
-          githubLink={"https://github.com/cherrydub/jsonroute"}
-          siteLink={"https://worldwise.cherrydub.com/"}
+          githubLink={"https://github.com/cherrydub/fast-pizza"}
+          siteLink={"https://pizza.cherrydub.com/"}
         />
         <ProjectCard
           badgeObj={badgeObj}
