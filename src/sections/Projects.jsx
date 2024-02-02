@@ -66,6 +66,17 @@ export default function Projects() {
       <div className="flex items-start flex-wrap">
         <ProjectCard
           badgeObj={badgeObj}
+          title="Cherry NFT"
+          stack={["html", "css", "javascript", "tailwind", "react"]}
+          description={
+            "Stay up to date with popular trending NFTs, dynamically view by currency and different timeframes for data such as floor price, marketcap, volume etc using a private API"
+          }
+          imgSrc={"cherry-cherries.svg"}
+          githubLink={"https://github.com/cherrydub/rupee-nft"}
+          siteLink={"https://nft.cherrydub.com/"}
+        />
+        <ProjectCard
+          badgeObj={badgeObj}
           title="Smart Brain"
           stack={[
             "html",
@@ -78,7 +89,7 @@ export default function Projects() {
             "psql",
           ]}
           description={
-            "PSQL database holds user info. Users can signup/login and upload an image, the website will then detect, count and outline any faces on the image"
+            "PSQL database holds user info. Users can signup/login and upload an image, the website will then detect, count and outline any faces on the image. ***Please allow a few moments to login as its using a free database"
           }
           imgSrc={"cherry-cherries.svg"}
           githubFe={"https://github.com/cherrydub/face-recognition-fe"}
